@@ -7,7 +7,7 @@ Hybrid CHiLO Bookの確認テスト、バッジ発行はMoodleにリンクして
 
 テーマ適応
 ---------------------------------
-通常のMoodleテーマのインストールに加え、 <MOODLE_DIR>/lib/weblib.php に対してこちらで用意したパッチを適応してください。
+通常のMoodleテーマのインストールに加え、 MOODLE_DIR/lib/weblib.php に対してこちらで用意したパッチを適応してください。
 
     # mv weblib.patch <MOODLE_DIR>
     # patch -p0 < <MOODLE_DIR>/weblib.patch
