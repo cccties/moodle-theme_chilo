@@ -1,7 +1,7 @@
 概要
 ============
 このテーマはHybrid CHiLO Bookに最適化されたMoodleの確認テスト、バッジ発行用ページのテーマです。
-Moodle2.6の時点で用意されたClean themeをベースに作成しました。
+  Moodle2.6の時点で用意されたClean themeをベースに作成しました。
 
 Hybrid CHiLO Bookの確認テスト、バッジ発行はMoodleにリンクして実現しています。
 
