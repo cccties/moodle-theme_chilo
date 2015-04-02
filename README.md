@@ -13,9 +13,13 @@
 
 テーマ適応
 ---------------------------------
-通常のMoodleテーマのインストールに加え、 moodle/lib/weblib.php に対してパッチを当ててください。
+chiloフォルダを、Moodleのテーマディレクトリに配置し、通常のMoodleテーマのインストールに加え、
 
-    # mv weblib.patch <MOODLE_DIR>
+    # mv chilo <MOODLE_DIR>/theme/
+
+moodle/lib/weblib.php に対してパッチを当ててください。
+
+    # mv weblib.patch <MOODLE_DIR>/
     # patch -p0 < <MOODLE_DIR>/weblib.patch
 
 テーマの有効化・無効化
