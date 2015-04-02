@@ -17,7 +17,7 @@ chiloフォルダを、Moodleのテーマディレクトリに配置し、通常
 
     # mv chilo <MOODLE_DIR>/theme/
 
-moodle/lib/weblib.php に対してパッチを当ててください。
+weblib.patchをMoodleディレクトリ直下に配置し、パッチコマンドを実行してください。
 
     # mv weblib.patch <MOODLE_DIR>/
     # patch -p0 < <MOODLE_DIR>/weblib.patch
