@@ -1,0 +1,40 @@
+diff --git lib/weblib.php lib/weblib.php
+index 955526e..619c4b9 100644
+--- lib/weblib.php
++++ lib/weblib.php
+@@ -2541,6 +2541,12 @@ function notice ($message, $link='', $course=null) {
+ function redirect($url, $message='', $delay=-1) {
+     global $OUTPUT, $PAGE, $CFG;
+ 
++    /*
++    * check called from iBooks
++    * by tueda, 2013/12/19
++    */
++    setChiloFlagIntoSession();
++
+     if (CLI_SCRIPT or AJAX_SCRIPT) {
+         // This is wrong - developers should not use redirect in these scripts but it should not be very likely.
+         throw new moodle_exception('redirecterrordetected', 'error');
+@@ -3563,3 +3569,22 @@ function get_formatted_help_string($identifier, $component, $ajax = false) {
+     }
+     return $data;
+ }
++
++/**
++ * to Set $_SESSOIN for ChiloFlag
++ * @author tueda
++ */
++function setChiloFlagIntoSession() {
++  session_start();
++  if (!$_SESSION['fromChilo']) {
++    $_SESSION['fromChilo'] = 0;
++  }
++  if ($_REQUEST['chiloflag'] || $_REQUEST['chiloflag'] === '0') {
++    $_SESSION['fromChilo'] = $_REQUEST['chiloflag'];
++    debugging('setChiloFlagIntoSession: fromChilo=' . $_REQUEST['chiloflag'],
++      DEBUG_DEVELOPER);
++  } else {
++    debugging('setChiloFlagIntoSession: isIBooks undefined!!!',
++      DEBUG_DEVELOPER);
++  }
++}
