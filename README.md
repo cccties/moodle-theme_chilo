@@ -28,25 +28,23 @@ Moodleのバージョンは 2.6,2.7,2.8 で動作確認できています。
 
 Moodle theme for CHiLO Bookは、管理用メニュー、編集用メニューを非表示にしてしまうなど、Moodle全体のデザインを大きく変更してしまいます。次の利用方法をおすすめします。
 
-*テーマの適用*
-
-*MoodleをCHiLOでしか利用しない場合*
+### MoodleをCHiLOでしか利用しない場合
 
 管理者メニューの「サイト管理 > アピアランス > テーマ > テーマセレクタ」でChiloを適用してください。
 
-*MoodleをCHiLO以外でも利用する場合*
+### MoodleをCHiLO以外でも利用する場合
 
 CHiLO Bookからリンクする特定のコースだけにMoodle theme for CHiLO Bookを適用してください。
 
 1. 管理者メニューの「サイト管理 > アピアランス > テーマ > テーマ設定」で、コーステーマを許可する
 2. コース作成時に、「アピアランス > テーマを強制する」で、Chiloのテーマを強制する
 
-*Moodleディフォルトデザインに戻す*
+### Moodleディフォルトデザインに戻す
 
- Moodleディフォルトデザインを表示したい場合は、MoodleのURLに _?(&)chiloflag=2_ の引数を加えてください。
+Moodleディフォルトデザインを表示したい場合は、MoodleのURLに _?(&)chiloflag=2_ の引数を加えてください。
 
-例
-https://dev.chilos.jp/login/index.php?chiloflag=2
+例  
+    http://example.net/login/index.php?chiloflag=2
 
 
 
