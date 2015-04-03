@@ -22,7 +22,7 @@ Moodle 2.6,2.7,2.8
 4. Moodleの管理画面「 サイト管理 > 通知 」 でchiloのテーマをインストールしてください。
 5. _weblib.patch_ ファイルを、Moodleディレクトリの直下に移動して、次の手順でパッチコマンドを実行してください。
 
-> patch -p0 < <MOODLE_DIR>/weblib.patch
+    patch -p0 < <MOODLE_DIR>/weblib.patch
 
 ### 利用方法
 
