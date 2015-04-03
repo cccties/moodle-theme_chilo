@@ -18,9 +18,9 @@ Moodleのバージョンは 2.6,2.7,2.8 で動作確認できています。
 1. Moodle2.6以上をインストールします。
 2. GitHubから Moodle theme for CHiLO Book( https://github.com/cccties/moodle-theme_chilo/archive/master.zip
 )をダウンロードし、展開します。
-3. 展開された _chilo/_ をMoodleをインストールしたサーバーの _<MOODLE_DIR>/theme/_ に移動します。
+3. 展開された _chilo/_ をMoodleをインストールしたサーバーの _moodle/theme/_ に移動します。
 4. Moodleの管理画面「 サイト管理 > 通知 」 でchiloのテーマをインストールしてください。
-5. _weblib.patch_ ファイルを、Moodleをインストールしたサーバーの _<MOODLE_DIR>/_ に移動します。
+5. _weblib.patch_ ファイルを、Moodleをインストールしたサーバーの _moodle/_ に移動します。
 6. 次のパッチコマンドを実行してください。  
 patch -p0 < <MOODLE_DIR>/weblib.patch
 
