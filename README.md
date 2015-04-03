@@ -1,21 +1,19 @@
-# Moodle theme for CHiLO Book
-
-### Moodle theme for CHiLO Bookとは
+# The "Chilo" Moodle Theme
 
 Hybrid [CHiLO Book](https://github.com/cccties/CHiLO-Producer/wiki) は、EPUB3フォーマットの電子書籍に、解説ビデオのみを埋め込み、確認テスト、バッジ発行機能はオープンソースLMSのMoodleにリンクして実現しています。
- このMoodle theme for CHiLO Bookは、CHiLO Bookからクイズやフォーラムにリンクしたとき、不要なメニューやリンクを非表示にします。
+このMoodle theme for CHiLO Bookは、CHiLO Bookからクイズやフォーラムにリンクしたとき、不要なメニューやリンクを非表示にします。
  
  Moodle theme for CHiLO Bookは、Moodle2.6 Clean themeをカスタマイズして作成されています。
 
 [元の画面](image1.png)  
 [Moodle theme for CHiLO Book適用後の画面](image2.png)  
 
-### 推奨環境
+## 推奨環境
 
-UNIX 系 OS への導入を前提としています．
+UNIX 系 OS への導入を前提としています．  
 Moodleのバージョンは 2.6,2.7,2.8 で動作確認できています。
 
-### インストール
+## インストール
 
 1. Moodle2.6以上をインストールします。
 2. GitHubから Moodle theme for CHiLO Book( https://github.com/cccties/moodle-theme_chilo/archive/master.zip
@@ -26,30 +24,29 @@ Moodleのバージョンは 2.6,2.7,2.8 で動作確認できています。
 
     patch -p0 < <MOODLE_DIR>/weblib.patch
 
-### 利用方法
+## 利用方法
 
 Moodle theme for CHiLO Bookは、管理用メニュー、編集用メニューを非表示にしてしまうなど、Moodle全体のデザインを大きく変更してしまいます。次の利用方法をおすすめします。
 
 *テーマの適用*
 
-> *MoodleをCHiLOでしか利用しない場合*
-> 
-> 管理者メニューの「サイト管理 > アピアランス > テーマ > テーマセレクタ」でChiloを適用してください。
-> 
-> *MoodleをCHiLO以外でも利用する場合*
-> 
-> CHiLO Bookからリンクする特定のコースだけにMoodle theme for CHiLO Bookを適用してください。
-> 
-> 1. 管理者メニューの「サイト管理 > アピアランス > テーマ > テーマ設定」で、コーステーマを許可する
-> 2. コース作成時に、「アピアランス > テーマを強制する」で、Chiloのテーマを強制する
+*MoodleをCHiLOでしか利用しない場合*
+
+管理者メニューの「サイト管理 > アピアランス > テーマ > テーマセレクタ」でChiloを適用してください。
+
+*MoodleをCHiLO以外でも利用する場合*
+
+CHiLO Bookからリンクする特定のコースだけにMoodle theme for CHiLO Bookを適用してください。
+
+1. 管理者メニューの「サイト管理 > アピアランス > テーマ > テーマ設定」で、コーステーマを許可する
+2. コース作成時に、「アピアランス > テーマを強制する」で、Chiloのテーマを強制する
 
 *Moodleディフォルトデザインに戻す*
-> 
-> Moodleディフォルトデザインを表示したい場合は、MoodleのURLに _?(&)chiloflag=2_ の引数を加えてください。
-> 
-> 例
-> 
-> https://dev.chilos.jp/login/index.php?chiloflag=2
+
+ Moodleディフォルトデザインを表示したい場合は、MoodleのURLに _?(&)chiloflag=2_ の引数を加えてください。
+
+例
+https://dev.chilos.jp/login/index.php?chiloflag=2
 
 
 
