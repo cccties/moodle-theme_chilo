@@ -18,24 +18,22 @@ Hybrid [CHiLO Book](https://github.com/cccties/CHiLO-Producer/wiki) は、EPUB3�
 
 1. Moodle2.6以上をインストールします。
 2. GitHubから Moodle theme for CHiLO Book( https://github.com/cccties/?????????? )をダウンロードし、展開します。
-
-chiloフォルダを、Moodleのテーマディレクトリに配置し、通常のMoodleテーマのインストールに加え、
+3. 展開された _chilo/_ をMoodleをインストールしたサーバーの _<MOODLE_DIR>/theme/_ にコピーします。
+4. Moodleの管理画面「サイト管理 > アピアランス > テーマ > テーマセレクタ で、？？？？？？を選択してください。
+5. 次の手順でパッチコマンドを実行してください。
 
     # mv chilo <MOODLE_DIR>/theme/
-
-weblib.patchをMoodleディレクトリ直下に配置し、パッチコマンドを実行してください。
-
     # mv weblib.patch <MOODLE_DIR>/
     # patch -p0 < <MOODLE_DIR>/weblib.patch
 
-テーマの有効化・無効化
----------------------------------
-このテーマを適応したページにアクセスすると、編集するのに必要な箇所も非表示になり困るので、   
+### テーマの有効化・無効化
+
+Moodle theme for CHiLO Bookを適応したMoodleは、Moodleの管理用メニュー、編集用メニューも非表示になります。
+
+通常のMoodleのメニューを表示したい場合は、MoodleのURLに _?(&)chiloflag=2_ の引数を加えてください。
 非表示部分を無効するため対応を加えています。
 
-※デフォルト設定の場合
-* 非表示を無効にしたい場合、URL末尾に ?(&)chiloflag=2 と引数を加えます
-* 非表示を有効にしたい場合、URL末尾に ?(&)chiloflag=0 と引数を加えます
+> 例
+> https://dev.chilos.jp/login/index.php(&)chiloflag=2
 
-設定などに関しての詳細はこちらを見てください  
-https://github.com/cccties/moodle-theme_chilo/wiki
+その他、詳細はこちらをご覧ください。　-> [Moodle theme for CHiLO Book](https://github.com/cccties/moodle-theme_chilo/wiki)
