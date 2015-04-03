@@ -1,18 +1,24 @@
-概要
-============
-このテーマはHybrid CHiLO Bookの利用に必要な、最適化されたMoodleのテーマです。   
-クイズやフォーラム画面などで不必要な部分を非表示させています。
+# Moodle theme for CHiLO Book
 
-![画面例1](image1.png)  
+## Moodle theme for CHiLO Bookとは
 
-↓  
+Hybrid [CHiLO Book](https://github.com/cccties/CHiLO-Producer/wiki) は、EPUB3フォーマットの電子書籍に、解説ビデオのみを埋め込み、確認テスト、バッジ発行機能はオープンソースLMSのMoodleにリンクして実現しています。
+ このMoodle theme for CHiLO Bookは、CHiLO Bookからクイズやフォーラムにリンクしたとき、不要なメニューやリンクを非表示にします。
+ 
+ Moodle theme for CHiLO Bookは、Moodle2.6 Clean themeをカスタマイズして作成されています。
 
-![画面例2](image2.png)  
+[元の画面](image1.png)  
+[Moodle theme for CHiLO Book適用後の画面](image2.png)  
 
-なお、このテーマは、Moodle2.6の時点で用意されたClean themeをベースに作成しました。
+### 推奨環境？
 
-テーマ適応
----------------------------------
+＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+
+### インストール
+
+1. Moodle2.6以上をインストールします。
+2. GitHubから Moodle theme for CHiLO Book( https://github.com/cccties/?????????? )をダウンロードし、展開します。
+
 chiloフォルダを、Moodleのテーマディレクトリに配置し、通常のMoodleテーマのインストールに加え、
 
     # mv chilo <MOODLE_DIR>/theme/
