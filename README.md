@@ -22,9 +22,11 @@ Hybrid [CHiLO Book](https://github.com/cccties/CHiLO-Producer/wiki) は、EPUB3�
 4. Moodleの管理画面「サイト管理 > アピアランス > テーマ > テーマセレクタ で、？？？？？？を選択してください。
 5. 次の手順でパッチコマンドを実行してください。
 
-    # mv chilo <MOODLE_DIR>/theme/
-    # mv weblib.patch <MOODLE_DIR>/
-    # patch -p0 < <MOODLE_DIR>/weblib.patch
+> # mv chilo <MOODLE_DIR>/theme/
+> 
+> # mv weblib.patch <MOODLE_DIR>/
+> 
+> # patch -p0 < <MOODLE_DIR>/weblib.patch
 
 ### テーマの有効化・無効化
 
