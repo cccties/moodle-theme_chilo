@@ -12,7 +12,8 @@ Hybrid [CHiLO Book](https://github.com/cccties/CHiLO-Producer/wiki) は、EPUB3�
 
 ### 推奨環境
 
-Moodle 2.6,2.7,2.8
+UNIX 系 OS への導入を前提としています．
+Moodleのバージョンは 2.6,2.7,2.8 で動作確認できています。
 
 ### インストール
 
