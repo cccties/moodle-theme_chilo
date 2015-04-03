@@ -1,6 +1,6 @@
 # Moodle theme for CHiLO Book
 
-## Moodle theme for CHiLO Bookとは
+### Moodle theme for CHiLO Bookとは
 
 Hybrid [CHiLO Book](https://github.com/cccties/CHiLO-Producer/wiki) は、EPUB3フォーマットの電子書籍に、解説ビデオのみを埋め込み、確認テスト、バッジ発行機能はオープンソースLMSのMoodleにリンクして実現しています。
  このMoodle theme for CHiLO Bookは、CHiLO Bookからクイズやフォーラムにリンクしたとき、不要なメニューやリンクを非表示にします。
@@ -23,7 +23,9 @@ Hybrid [CHiLO Book](https://github.com/cccties/CHiLO-Producer/wiki) は、EPUB3�
 5. 次の手順でパッチコマンドを実行してください。
 
 > mv chilo <MOODLE_DIR>/theme/
+> 
 > mv weblib.patch <MOODLE_DIR>/
+> 
 > patch -p0 < <MOODLE_DIR>/weblib.patch
 
 ### テーマの有効化・無効化
@@ -34,6 +36,7 @@ Moodle theme for CHiLO Bookを適応したMoodleは、Moodleの管理用メニ�
 非表示部分を無効するため対応を加えています。
 
 > 例
+> 
 > https://dev.chilos.jp/login/index.php(&)chiloflag=2
 
 その他、詳細はこちらをご覧ください。　-> [Moodle theme for CHiLO Book](https://github.com/cccties/moodle-theme_chilo/wiki)
