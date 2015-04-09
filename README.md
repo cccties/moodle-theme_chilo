@@ -55,7 +55,7 @@ https://github.com/cccties/moodle-theme_chilo/wiki
     
 ## Licensing
 
-This file is released on the GNU Public License (GPL) v2. see <http://www.gnu.org/licenses/>.
+This file is released on the GNU Public License (GPL) v3. see <http://www.gnu.org/licenses/gpl.html/>.
 
 
 
