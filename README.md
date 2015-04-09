@@ -43,11 +43,18 @@ CHiLO Bookからリンクする特定のコースだけにchiloテーマを適�
 1. 管理者メニューの「サイト管理 > アピアランス > テーマ > テーマ設定」で、コーステーマを許可する。
 2. コース作成時に、「アピアランス > テーマを強制する」で、Chiloのテーマを選択する。
 
-### chiloテーマが適用されたページで、管理用メニューや編集用メニューを表示したい場合
+### 管理用メニューや編集用メニューを表示したい場合
 
-表示したいMoodleページのURLに _?(&)chiloflag=2_ の引数を追加すると、Moodle標準デザインに戻ります。
+chiloテーマが適用されたページで、管理用メニューや編集用メニューを表示したい場合は、MoodleページのURLに _?(&)chiloflag=2_ の引数を追加します。
 
 例  
     http://example.net/login/index.php?chiloflag=2
+    
+### Licensing
+
+This file is released on the GNU Public License (GPL) v2. see <http://www.gnu.org/licenses/>.
+
 
 その他、詳細はこちらをご覧ください。　->　https://github.com/cccties/moodle-theme_chilo/wiki
+
+
