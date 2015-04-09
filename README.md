@@ -32,29 +32,31 @@ patch -p0 < <MOODLE_DIR>/weblib.patch
 
 chiloテーマを適用すると、Moodleの管理用メニューや編集用メニューが表示されなくなります。従いまして、次の利用方法をおすすめします。
 
-### MoodleをCHiLOでしか利用しない場合
+*MoodleをCHiLOでしか利用しない場合*
 
 管理者メニューの「サイト管理 > アピアランス > テーマ > テーマセレクタ」でChiloを適用してください。
 
-### MoodleをCHiLO以外でも利用する場合
+*MoodleをCHiLO以外でも利用する場合*
 
 CHiLO Bookからリンクする特定のコースだけにchiloテーマを適用してください。
 
 1. 管理者メニューの「サイト管理 > アピアランス > テーマ > テーマ設定」で、コーステーマを許可する。
 2. コース作成時に、「アピアランス > テーマを強制する」で、Chiloのテーマを選択する。
 
-### 管理用メニューや編集用メニューを表示したい場合
+*管理用メニューや編集用メニューを表示したい場合*
 
 chiloテーマが適用されたページで、管理用メニューや編集用メニューを表示したい場合は、MoodleページのURLに _?(&)chiloflag=2_ の引数を追加します。
 
-例  
-    http://example.net/login/index.php?chiloflag=2
+例  http://example.net/login/index.php?chiloflag=2
+
+## CHiLO Book用のクイズ・フォーラムの作り方
+https://github.com/cccties/moodle-theme_chilo/wiki
     
-### Licensing
+## Licensing
 
 This file is released on the GNU Public License (GPL) v2. see <http://www.gnu.org/licenses/>.
 
 
-その他、詳細はこちらをご覧ください。　->　https://github.com/cccties/moodle-theme_chilo/wiki
+
 
 
