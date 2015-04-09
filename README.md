@@ -1,12 +1,15 @@
 # The "Chilo" Moodle Theme
 
-Hybrid [CHiLO Book](https://github.com/cccties/CHiLO-Producer/wiki) は、EPUB3フォーマットの電子書籍に解説ビデオのみを埋め込み、確認テストとバッジ発行機能はオープンソースLMSのMoodleにリンクして実現しています。
-Chiloテーマは、CHiLO BookからMoodleのクイズやフォーラムにアクセスした場合、Moodleディフォルトデザインのメニューやリンクを非表示にして操作しやすいシンプルなデザインに変更します。
- 
+Chiloテーマは、クイズやフォーラムのMoodle標準デザインをシンプルなデザインに変更し、ユーザーに分かりやすく表示します。
+
+このソフトウェアは、[_CHiLO_](http://www.cccties.org/activities/chilo/)Ⓡ の一部として提供されています。
+
 このテーマは、Moodle2.6 Clean themeをカスタマイズして作成されています。
 
 [元の画面](image1.png)  
 [テーマ適用後の画面](image2.png)  
+　Moodle標準デザインのパンくずやサイドメニューを非表示にし、ユーザーの誤操作を防ぎます。
+
 
 ## 推奨環境
 
@@ -27,7 +30,7 @@ patch -p0 < <MOODLE_DIR>/weblib.patch
 
 ## 利用方法
 
-chiloテーマは、Moodleの管理用メニューや編集用メニューを非表示にしてしまうなど、デザインを大きく変更してしまいます。次の利用方法をおすすめします。
+chiloテーマを適用すると、Moodleの管理用メニューや編集用メニューが表示されなくなります。従いまして、次の利用方法をおすすめします。
 
 ### MoodleをCHiLOでしか利用しない場合
 
@@ -40,9 +43,9 @@ CHiLO Bookからリンクする特定のコースだけにchiloテーマを適�
 1. 管理者メニューの「サイト管理 > アピアランス > テーマ > テーマ設定」で、コーステーマを許可する。
 2. コース作成時に、「アピアランス > テーマを強制する」で、Chiloのテーマを選択する。
 
-### Moodleディフォルトデザインに戻す
+### chiloテーマが適用されたページで、管理用メニューや編集用メニューを表示したい場合
 
-Moodleディフォルトデザインを表示したい場合は、MoodleのURLに _?(&)chiloflag=2_ の引数を加えてください。
+表示したいMoodleページのURLに _?(&)chiloflag=2_ の引数を追加すると、Moodle標準デザインに戻ります。
 
 例  
     http://example.net/login/index.php?chiloflag=2
