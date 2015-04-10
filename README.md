@@ -10,13 +10,13 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
 [テーマ適用後の画面](image2.png)  
 　
 
-## 推奨環境
+### 推奨環境
 
 ・ Moodleの2.6以上  
 ・ UNIX 系 OS  
 
 
-## インストール
+### インストール
 
 1. Moodle 2.6 以上をインストールします。
 2. GitHubから Chiloテーマ( https://github.com/cccties/moodle-theme_chilo/archive/master.zip
@@ -27,7 +27,7 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
 6. 次のパッチコマンドを実行してください。  
 patch -p0 < <MOODLE_DIR>/weblib.patch
 
-## 利用方法
+### 利用方法
 
 chiloテーマを設定すると、Moodleの管理者用メニューや編集者用メニューが表示されなくなります。従いまして、次の利用方法をおすすめします。
 
@@ -49,16 +49,16 @@ chiloテーマが設定されたページで、管理用メニューや編集用
 > 例  http://example.net/login/index.php?chiloflag=2
  
 
-## CHiLO Book用のクイズ・フォーラムの作り方
+### CHiLO Book用のクイズ・フォーラムの作り方
 https://github.com/cccties/moodle-theme_chilo/wiki
     
 
-## 課題・質問
+### 課題・質問
 
 このソフトの課題、質問、及び要望はこちらにご記載ください。
 -> [Issues](https://github.com/cccties/moodle-theme_chilo/issues)
 
-## Licensing
+### Licensing
 
 This file is released on the GNU Public License (GPL) v3. (see [LICENSE.txt](LICENSE.txt)) 
 
