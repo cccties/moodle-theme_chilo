@@ -12,7 +12,7 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
 
 ## 推奨環境
 
-・ Moodleの2.6以上
+・ Moodleの2.6以上  
 ・ UNIX 系 OS  
 
 
