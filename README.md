@@ -52,6 +52,12 @@ chiloテーマが設定されたページで、管理用メニューや編集用
 ## CHiLO Book用のクイズ・フォーラムの作り方
 https://github.com/cccties/moodle-theme_chilo/wiki
     
+
+## 課題・質問
+
+このソフトの課題、質問、及び要望はこちらにご記載ください。
+-> [Issues](https://github.com/cccties/moodle-theme_chilo/issues)
+
 ## Licensing
 
 This file is released on the GNU Public License (GPL) v3. (see [LICENSE.txt](LICENSE.txt)) 
