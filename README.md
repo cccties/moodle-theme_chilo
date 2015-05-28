@@ -1,3 +1,4 @@
+English version is [HERE](#english).
 # The "Chilo" Moodle Theme
 
 Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMoodleのメニューやリンクを非表示にし、ユーザーの操作ミスを防ぐことができます。
@@ -64,7 +65,71 @@ https://github.com/cccties/moodle-theme_chilo/wiki
 
 This file is released on the GNU Public License (GPL) v3. (see [LICENSE.txt](LICENSE.txt)) 
 
+***
+# <a name="english">The "Chilo" Moodle Theme
+
+After configuring Chilo theme, you can hide the menues and links of Moodle that the users would not use in order to reduce mistakes in operating.
+
+This software is provided as a part of [_CHiLO_](http://www.cccties.org/activities/chilo/)Ⓡ.
+
+This theme is created by customizing Moodle2.6 Clean theme.
+
+[Screen before application of the theme](image1.png)  
+[Screen after the application of the theme](image2.png)  
+　
+
+### Recommended Environment
+
+・ Moodle 2.6 or higher 
+・ UNIX-like OS  
 
 
+### Installation
 
+1. Install Moodle 2.6 or higher.
+2. Download Chilo theme( https://github.com/cccties/moodle-theme_chilo/archive/master.zip
+)from GitHub then expand.
+3. Move the expanded _chilo/_ on to _moodle/theme/_ of the Moodle downloaded server.
+4. Configure the Chilo theme from the Moodle administrator menue _"Site > Notice"_.
+5. Move the expanded _weblib.patch_ on to _moodle/_ of the Moodle downloaded server.
+6. Move to the directory of Moodle and execute the following patch command.
+    patch -p0 < weblib.patch  
+(If you cannot find the patch command, install patch.)
+
+
+### How to use
+
+When the Chilo theme is configured, **the Moodle administrator menue and editor menue will not appear on screen.**Therefore, we recomend you to follow the steps below.
+
+**To show the administrator's menu and/or editor's menu**
+
+To show the administrator's menu and/or editor's menu on the Chilo theme configured page, add argument _?(&)chiloflag=2_ to the URL of the Moodle page you want to display.  
+
+> E.g.)  http://example.net/login/index.php?chiloflag=2
+
+**When Moodle is used only for CHiLO**
+
+Configure Chilo from administrator menu _"Site administration > Appearance > Theme > Theme selector"_. 
+
+**When Moodle is also used for other purpose than CHiLO**
+
+Configure Chilo theme only to specific courses utilizing CHiLO Books.
+ 
+1. From the administrator menu, _"Site administration > Appearance > Theme > Theme configuration"_, allow course theme.
+
+2. When creating courses, configure Chilo theme from "Appearance > Theme > Enforce theme" .
+
+
+### How to create quizzes and forums for CHiLO Book
+https://github.com/cccties/moodle-theme_chilo/wiki
+    
+
+### Inquiries
+
+Enter any inquiries, opinions, or requests concernig the software.
+-> [Inquiries](https://github.com/cccties/moodle-theme_chilo/issues)
+
+### Licensing
+
+This file is released on the GNU Public License (GPL) v3. (see [LICENSE.txt](LICENSE.txt)) 
 
