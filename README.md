@@ -80,8 +80,8 @@ This theme is created by customizing Moodle2.6 Clean theme.
 
 ### Recommended Environment
 
-・ Moodle 2.6 or higher 
-・ UNIX-like OS  
+* Moodle 2.6 or higher 
+* UNIX-like OS  
 
 
 ### Installation
