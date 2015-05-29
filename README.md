@@ -127,7 +127,7 @@ https://github.com/cccties/moodle-theme_chilo/wiki
 ### Inquiries
 
 Enter any inquiries, opinions, or requests concernig the software.
--> [Inquiries](https://github.com/cccties/moodle-theme_chilo/issues)
+-> [Issues](https://github.com/cccties/moodle-theme_chilo/issues)
 
 ### Licensing
 
