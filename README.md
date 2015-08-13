@@ -30,27 +30,6 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
 (patch コマンドが見つからない場合はpatchをインストールしてください)
 
 
-### 利用方法
-
-chiloテーマを設定すると、**Moodleの管理者用メニューや編集者用メニューが表示されなくなります。**従いまして、次の利用方法をおすすめします。
-
-**管理者用メニューや編集者用メニューを表示したい場合**
-
-chiloテーマが設定されたページで、管理用メニューや編集用メニューを表示したい場合は、表示したいMoodleページのURLに _?(&)chiloflag=2_ の引数を追加します。
- 
-> 例  http://example.net/login/index.php?chiloflag=2
-
-**MoodleをCHiLOでしか利用しない場合**
-
-管理者用メニューの _「サイト管理 > アピアランス > テーマ > テーマセレクタ」_ でChiloを設定してください。
-
-**MoodleをCHiLO以外でも利用する場合**
-
-CHiLO Bookが利用する特定のコースだけにchiloテーマを設定してください。
- 
-1. 管理者用メニューの _「サイト管理 > アピアランス > テーマ > テーマ設定」_ で、コーステーマを許可します。
-2. コース作成時に、「アピアランス > テーマを強制する」で、Chiloのテーマを設定します。
-
 
 ### CHiLO Book用のクイズ・フォーラムの作り方
 https://github.com/cccties/moodle-theme_chilo/wiki
@@ -95,30 +74,6 @@ This theme is created by customizing Moodle2.6 Clean theme.
 6. Move to the directory of Moodle and execute the following patch command.
     patch -p0 < weblib.patch  
 (If you cannot find the patch command, install patch.)
-
-
-### How to use
-
-When the Chilo theme is configured, **the Moodle administrator menue and editor menue will not appear on screen.**Therefore, we recomend you to follow the steps below.
-
-**To show the administrator's menu and/or editor's menu**
-
-To show the administrator's menu and/or editor's menu on the Chilo theme configured page, add argument _?(&)chiloflag=2_ to the URL of the Moodle page you want to display.  
-
-> E.g.)  http://example.net/login/index.php?chiloflag=2
-
-**When Moodle is used only for CHiLO**
-
-Configure Chilo from administrator menu _"Site administration > Appearance > Theme > Theme selector"_. 
-
-**When Moodle is also used for other purpose than CHiLO**
-
-Configure Chilo theme only to specific courses utilizing CHiLO Books.
- 
-1. From the administrator menu, _"Site administration > Appearance > Theme > Theme configuration"_, allow course theme.
-
-2. When creating courses, configure Chilo theme from "Appearance > Theme > Enforce theme" .
-
 
 ### How to create quizzes and forums for CHiLO Book
 https://github.com/cccties/moodle-theme_chilo/wiki
