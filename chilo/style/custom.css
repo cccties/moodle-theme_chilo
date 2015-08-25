@@ -8,15 +8,15 @@
 	.simple-view #page-navbar,
 	#page-enrol-index .simple-view .content,        /* (6) コース情報 */
 	#page-enrol-index .simple-view .coursebox,      /* (6) コース情報 */
-	#page-course-view-weeks .simple-view .content,  /* (6) コース情報 */
-	#page-course-view-topics .simple-view .content, /* (6) コース情報 */
-	#page-course-view-social .simple-view .content, /* (6) コース情報 */
+	/* #page-course-view-weeks .simple-view .content,  /* (6) コース情報 ウィークリーフォーマット*/
+	/* #page-course-view-topics .simple-view .content, /* (6) コース情報 トピックフォーマット*/
+	/* #page-course-view-social .simple-view .content, /* (6) コース情報 ソーシャルフォーマット*/
 	/* .simple-view #region-main h2,                   (6) コース情報 単一活動フォーマット  */
 	/* .simple-view #region-main #intro,               (6) コース情報 単一活動フォーマット  */
 	#page-login-confirm .simple-view .singlebutton, /* アカウントを確定ページのコースボタンの非表示 */
 	#page-grade-report-user-index .simple-view #choosepluginreport, /* (8) 表示レポートのセレクト項目*/
-	.simple-view .course-content > ul > li, /* (7) コースセクションを非表示にする , ただし最上段にあるセクションは表示 */
-	.simple-view #block-region-side-pre,	
+	/* .simple-view .course-content > ul > li,  (7) コースセクションを非表示にする , ただし最上段にあるセクションは表示 */
+	.simple-view #block-region-side-pre,
 	.simple-view #block-region-side-post,
 	.simple-view #page-footer,
 	.simple-view #inst4, /* for admin ? */
@@ -25,11 +25,13 @@
 		display : none !important;
 	}
 
-	.simple-view .course-content > ul > li#section-0,
-	.simple-view .course-content > ul > li#section-0 .content /* (7) コースセクションを非表示にする , ただし最上段にあるセクションは表示 */
-	{
-		display : block !important;
-	}
+	/*  (7) コースセクションを非表示にする , ただし最上段にあるセクションは表示
+		.simple-view .course-content > ul > li#section-0,
+		.simple-view .course-content > ul > li#section-0 .content
+		{
+			display : block !important;
+		}
+	*/
 
 /* 要素の横幅を画面いっぱいに広げる */
 	.simple-view #page-content,
