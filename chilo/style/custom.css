@@ -169,6 +169,14 @@
 		display:none;
 	}
 
+/* ナビバーの追加 */
+	/* mybadges */
+	#go-to-badge
+	 {
+		float       : left;
+		padding     : 5px;
+		line-height : 30px;
+	}
 
 /* 以下は clean テーマにもともと設定されていた 	css */
 
