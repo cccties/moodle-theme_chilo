@@ -23,7 +23,7 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
 2. GitHubから Chiloテーマ( https://github.com/cccties/moodle-theme_chilo/archive/master.zip
 )をダウンロードし展開します。
 3. 展開された _chilo/_ をMoodleをインストールしたサーバーの _moodle/theme/_ に移動します。
-4. _chilo/javascript/styleSwitcher.js_ に記述されている_http://moodleroot/badges/mybadges.php_のmoodlerootをサーバ環境に合わせ変更します。
+4. _chilo/javascript/styleSwitcher.js_ に記述されている_var badges_に指定するURLをMoodleの環境に合わせ変更します。
 5. Moodleの管理者用メニューの _「サイト管理 > 通知」_ でchiloテーマを設定してください。
 6. 展開された _weblib.patch_ を、Moodleをインストールしたサーバーの _moodle/_ に移動します。
 7. Moodleがあるディレクトリに移動して、次のパッチコマンドを実行してください。  
