@@ -54,7 +54,9 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
 
 
 
+
 ## CHiLO Book用のクイズ・フォーラムの作り方
+
 https://github.com/cccties/moodle-theme_chilo/wiki
     
 
