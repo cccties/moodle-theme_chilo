@@ -5,6 +5,10 @@
  * クロスドメインでも参照できるので、有利。（今回は関係なし）
  * ただし、あまりにも便利で、いろいろなライブラリがハック的に値を格納しているかもしれないのが怖い点
  */
+ 
+ /* マイバッジのURL指定 */
+var badges = 'http://moodleroot/badges/mybadges.php';
+
 (function( window, document ){
 	var /* デザインをシンプル化する場合は、true にします*/
 		ALLWAYS_SIMPLE       = true,
@@ -100,7 +104,7 @@ window.setTimeout(
 				div = header.children[ 0 ].children[ 0 ];
 				div.insertBefore( elm1, div.children[ 0 ] );
 				
-				elm1.href      = 'http://moodleroot/badges/mybadges.php';
+				elm1.href      = badges;
 				elm1.innerHTML = 'My Badges';
 				elm1.id        = 'go-to-badge';
 			};
