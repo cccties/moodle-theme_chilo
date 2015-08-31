@@ -31,26 +31,42 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
 
 ## CHiLO のためのMoodle設定
 
-**AutoEnrol**
+**ナビゲーション設定**
 
-**ゲストログインの設定**
+ 1. ユーザのデフォルトホームページを「サイト」にする
+ 
+    http://moodleroot/admin/settings.php?section=navigation
 
-1. ゲストログインボタンの非表示化
-2. ゲストのオートログインを有効にする
-3. Moodleコースのディフォルト設定とする
-
-
-**ゲストのログインの有効化**
-
-1. オートログインを有効にする
-2. Moodleコースのディフォルト設定とする
 
 **完了トラッキング設定**
 
-1. 完了トラッキングを有効にする
-2. Moodleコースのディフォルト設定とする
+ 1. 完了トラッキングを有効にする
+ 
+    http://moodleroot/admin/settings.php?section=optionalsubsystems
 
-**活動名自動リンクの設定変更をonから変更する**
+ 2. Moodleコースのディフォルト設定で完了トラッキングを有効にする
+ 
+    http://moodleroot/admin/settings.php?section=coursesettings
+
+
+**活動名自動リンクの設定変更**
+
+ 1. 活動名自動リンクを無効にする
+ 
+    http://yourdomain/admin/filters.php
+ 
+
+**AutoEnrol**
+
+ 1. AutoEnrolの設定画面で「新しいコースにインスタンスを追加する」の有効化
+ 
+    http://moodleroot/admin/settings.php?section=enrolsettingsautoenrol
+
+ゲストログインの設定
+
+ 1. ゲストログインボタンの非表示化
+ 
+    http://moodleroot/admin/settings.php?section=manageauths
 
 
 
