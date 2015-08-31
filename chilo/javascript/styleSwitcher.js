@@ -94,6 +94,15 @@ window.setTimeout(
 		if( header = header[ 0 ] ){
 			if( !( chiloFlag & FLAG_DISABLE_SIMPLE ) ){
 				header.className += ' ' + SUPPLEMENT_CLASSNAME;
+				
+				/* mybadges */
+				elm1 = document.createElement( 'a' );
+				div = header.children[ 0 ].children[ 0 ];
+				div.insertBefore( elm1, div.children[ 0 ] );
+				
+				elm1.href      = 'http://moodleroot/badges/mybadges.php';
+				elm1.innerHTML = 'My Badges';
+				elm1.id        = 'go-to-badge';
 			};
 			
 			/*
