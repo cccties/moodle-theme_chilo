@@ -23,7 +23,7 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
 2. GitHubから Chiloテーマ( https://github.com/cccties/moodle-theme_chilo/archive/master.zip
 )をダウンロードし展開します。
 3. 展開された _chilo/_ をMoodleをインストールしたサーバーの _moodle/theme/_ に移動します。
-4. _chilo/javascript/styleSwitcher.js_ の100行目付近にある_http://moodleroot/badges/mybadges.php_のmoodlerootをMoodleをインストールしたサーバーの場所に変更します。
+4. _chilo/javascript/styleSwitcher.js_ に記述されている_http://moodleroot/badges/mybadges.php_のmoodlerootをサーバ環境に合わせ変更します。
 5. Moodleの管理者用メニューの _「サイト管理 > 通知」_ でchiloテーマを設定してください。
 6. 展開された _weblib.patch_ を、Moodleをインストールしたサーバーの _moodle/_ に移動します。
 7. Moodleがあるディレクトリに移動して、次のパッチコマンドを実行してください。  
@@ -52,7 +52,7 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
 
 **活動名自動リンクの設定変更**
 
- 1. CHiLO Bookと関係のないMoodleコースに自動的にリンクされるのｗ防ぐため、「活動名自動リンク」を無効にする
+ 1. CHiLO Bookと関係のないMoodleコースに自動的にリンクされるのを防ぐため、「活動名自動リンク」を無効にする
  
     http://yourdomain/admin/filters.php
  
