@@ -94,22 +94,17 @@
 	#page-mod-quiz-attempt .simple-view .logininfo,
 	#page-mod-quiz-summary .simple-view .logininfo,
 	#page-mod-quiz-review .simple-view .logininfo,
-	#page-mod-quiz-view .simple-view #go-to-top,
-	#page-mod-quiz-attempt .simple-view #go-to-top,
-	#page-mod-quiz-summary .simple-view #go-to-top,
-	#page-mod-quiz-review .simple-view #go-to-top,
-	#page-mod-quiz-view .simple-view #go-to-hoka,
-	#page-mod-quiz-attempt .simple-view #go-to-hoka,
-	#page-mod-quiz-summary .simple-view #go-to-hoka,
-	#page-mod-quiz-review .simple-view #go-to-hoka
+/* 	#page-mod-quiz-view .simple-view #go-to-badge,*/
+	#page-mod-quiz-attempt .simple-view #go-to-badge,
+	#page-mod-quiz-summary .simple-view #go-to-badge
+/*	#page-mod-quiz-review .simple-view #go-to-badge*/
 	{
 		display:none;
 	}
 
 /* レッスンページ  iframe内のクイズの時に言語切り替え以外のナビバー情報を隠す */
 	#page-mod-lesson-view .simple-view .logininfo,
-	#page-mod-lesson-view .simple-view #go-to-top,
-	#page-mod-lesson-view .simple-view #go-to-hoka
+	#page-mod-lesson-view .simple-view #go-to-badge
 	{
 		display:none;
 	}
