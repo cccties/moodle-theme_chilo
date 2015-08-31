@@ -21,13 +21,28 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
 
 1. Moodle 2.6 以上をインストールします。
 2. GitHubから Chiloテーマ( https://github.com/cccties/moodle-theme_chilo/archive/master.zip
-)をダウンロードし、展開します。
+)をダウンロードし展開します。
 3. 展開された _chilo/_ をMoodleをインストールしたサーバーの _moodle/theme/_ に移動します。
 4. Moodleの管理者用メニューの _「サイト管理 > 通知」_ でchiloテーマを設定してください。
 5. 展開された _weblib.patch_ を、Moodleをインストールしたサーバーの _moodle/_ に移動します。
 6. Moodleがあるディレクトリに移動して、次のパッチコマンドを実行してください。  
     patch -p0 < weblib.patch  
 (patch コマンドが見つからない場合はpatchをインストールしてください)
+
+### CHiLO のためのMoodle設定
+
+## AutoEnrol
+
+## ゲストのオートログインを有効にする
+　
+　オートログインを有効にする
+　ゲストOK
+　
+## 完了トラッキング設定
+　完了トラッキングを有効にする
+　コースの
+
+## 活動名自動リンクの設定変更をonから変更する
 
 
 
