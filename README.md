@@ -11,13 +11,13 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
 [テーマ適用後の画面](image2.png)  
 　
 
-### 推奨環境
+## 推奨環境
 
 ・ Moodleの2.6以上  
 ・ UNIX 系 OS  
 
 
-### インストール
+## インストール
 
 1. Moodle 2.6 以上をインストールします。
 2. GitHubから Chiloテーマ( https://github.com/cccties/moodle-theme_chilo/archive/master.zip
@@ -29,37 +29,38 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
     patch -p0 < weblib.patch  
 (patch コマンドが見つからない場合はpatchをインストールしてください)
 
-### CHiLO のためのMoodle設定
+## CHiLO のためのMoodle設定
 
-## AutoEnrol
+### AutoEnrol
 
-## ゲストのオートログインを有効にする
+### ゲストのオートログインを有効にする
 　
 　オートログインを有効にする
 　ゲストOK
 　
-## 完了トラッキング設定
+### 完了トラッキング設定
 　完了トラッキングを有効にする
 　コースの
 
-## 活動名自動リンクの設定変更をonから変更する
+### 活動名自動リンクの設定変更をonから変更する
 
 
 
-### CHiLO Book用のクイズ・フォーラムの作り方
+## CHiLO Book用のクイズ・フォーラムの作り方
 https://github.com/cccties/moodle-theme_chilo/wiki
     
 
-### 課題・質問
+## 課題・質問
 
 このソフトの課題、質問、及び要望はこちらにご記載ください。
 -> [Issues](https://github.com/cccties/moodle-theme_chilo/issues)
 
-### Licensing
+## Licensing
 
 This file is released on the GNU Public License (GPL) v3. (see [LICENSE.txt](LICENSE.txt)) 
 
 ***
+
 # <a name="english">The "Chilo" Moodle Theme
 
 After configuring Chilo theme, you can hide the menues and links of Moodle that the users would not use in order to reduce mistakes in operating.
