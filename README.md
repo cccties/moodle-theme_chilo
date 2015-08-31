@@ -33,42 +33,34 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
 
 **ナビゲーション設定**
 
- 1. ユーザのデフォルトホームページを「サイト」にする
+ 1. ログインしたユーザのホームページを「マイトップページ」から「サイトトップページ」に変更する
  
     http://moodleroot/admin/settings.php?section=navigation
 
 
 **完了トラッキング設定**
 
- 1. 完了トラッキングを有効にする
+ 1. Moodle Quiz モジュールの結果によりバッジを発行するため、完了トラッキングを有効にする
  
     http://moodleroot/admin/settings.php?section=optionalsubsystems
 
- 2. Moodleコースのディフォルト設定で完了トラッキングを有効にする
+ 2. 全てのMoodleコースの完了トラッキングを有効にする
  
     http://moodleroot/admin/settings.php?section=coursesettings
 
 
 **活動名自動リンクの設定変更**
 
- 1. 活動名自動リンクを無効にする
+ 1. CHiLO Bookと関係のないMoodleコースに自動的にリンクされるのｗ防ぐため、「活動名自動リンク」を無効にする
  
     http://yourdomain/admin/filters.php
  
 
 **AutoEnrol**
 
- 1. AutoEnrolの設定画面で「新しいコースにインスタンスを追加する」の有効化
+ 1. 全てのMoodleコースのAutoEnrolを有効にする
  
     http://moodleroot/admin/settings.php?section=enrolsettingsautoenrol
-
-ゲストログインの設定
-
- 1. ゲストログインボタンの非表示化
- 
-    http://moodleroot/admin/settings.php?section=manageauths
-
-
 
 
 ## CHiLO Book用のクイズ・フォーラムの作り方
