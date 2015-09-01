@@ -7,7 +7,7 @@
  */
  
  /* マイバッジのURL指定 */
-var badges = 'http://moodleroot/badges/mybadges.php';
+var moodleroot = '/'; /* 末尾が/で終わるように */
 
 (function( window, document ){
 	var /* デザインをシンプル化する場合は、true にします*/
@@ -104,7 +104,7 @@ window.setTimeout(
 				div = header.children[ 0 ].children[ 0 ];
 				div.insertBefore( elm1, div.children[ 0 ] );
 				
-				elm1.href      = badges;
+				elm1.href      = moodleroot + 'badges/mybadges.php';
 				elm1.innerHTML = 'My Badges';
 				elm1.id        = 'go-to-badge';
 			};
