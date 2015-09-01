@@ -106,7 +106,7 @@ This theme is created by customizing Moodle2.6 Clean theme.
 
 **Navigation Setting**
 
- 1. Modify the logged in homepage of the user  to "Site top page" from "My top page" 
+ 1. Modify the default home page for users from "Dashboard" to "Site" in order to display the CHiLO Book list distributed from Moodle.
  
     http://_root you installed_/admin/settings.php?section=navigation
 
@@ -121,13 +121,6 @@ This theme is created by customizing Moodle2.6 Clean theme.
  
     http://_root you installed_/admin/settings.php?section=coursesettings
 
-
-**Modify activity names auto-linking filter setting**
-
- 1. To avoid auto-linking to other Moodle courses which do not relate to CHiLO Book, disable activity-names auto linking filter.
- 
-    http://_root you installed_/admin/filters.php
- 
 
 **AutoEnrol**
 
