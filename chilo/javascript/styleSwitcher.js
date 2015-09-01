@@ -7,7 +7,8 @@
  */
  
  /* マイバッジのURL指定 */
-var moodleroot = '/'; /* 末尾が/で終わるように */
+ /* あなたがインストールしたMoodleのディレクトリに変更してください。※末尾が/で終わるようにする */
+var moodleroot = '/';
 
 (function( window, document ){
 	var /* デザインをシンプル化する場合は、true にします*/
