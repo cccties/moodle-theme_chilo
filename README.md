@@ -36,24 +36,24 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
 
  1. Moodleから配信するCHiLOBookの一覧をユーザのデフォルトホームページに表示するため「ダッシュボード」から「サイト」に変更する
  
-    http://moodleroot/admin/settings.php?section=navigation
+    http://_root you installed_/admin/settings.php?section=navigation
 
 
 **完了トラッキング設定**
 
  1. Moodle Quiz モジュールの結果によりバッジを発行するため、完了トラッキングを有効にする
  
-    http://moodleroot/admin/settings.php?section=optionalsubsystems
+    http://_root you installed_/admin/settings.php?section=optionalsubsystems
 
  2. 全てのMoodleコースの完了トラッキングを有効にする
  
-    http://moodleroot/admin/settings.php?section=coursesettings
+    http://_root you installed_/admin/settings.php?section=coursesettings
 
 **AutoEnrol**
 
  1. 作成する全てのMoodleコースに対してAutoEnrolを有効にする
  
-    http://moodleroot/admin/settings.php?section=enrolsettingsautoenrol
+    http://_root you installed_/admin/settings.php?section=enrolsettingsautoenrol
 
 
 ## CHiLO Book用のクイズ・フォーラムの作り方
