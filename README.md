@@ -116,32 +116,32 @@ This theme is created by customizing Moodle2.6 Clean theme.
 
  1. Modify the logged in homepage of the user  to "Site top page" from "My top page" 
  
-    http://moodleroot/admin/settings.php?section=navigation
+    http://_root you installed_/admin/settings.php?section=navigation
 
 
 **Completion Tracking Setting**
 
  1. Badges are issued according to the results of the Moodle Quiz module, so enable completion tracking.
  
-    http://moodleroot/admin/settings.php?section=optionalsubsystems
+    http://_root you installed_/admin/settings.php?section=optionalsubsystems
 
  2. Enable completion tracking of all Moodle courses
  
-    http://moodleroot/admin/settings.php?section=coursesettings
+    http://_root you installed_/admin/settings.php?section=coursesettings
 
 
 **Modify activity names auto-linking filter setting**
 
  1. To avoid auto-linking to other Moodle courses which do not relate to CHiLO Book, disable activity-names auto linking filter.
  
-    http://yourdomain/admin/filters.php
+    http://_root you installed_/admin/filters.php
  
 
 **AutoEnrol**
 
  1. Enable AutoEnrol of all the Moodle courses.
  
-    http://moodleroot/admin/settings.php?section=enrolsettingsautoenrol
+    http://_root you installed_/admin/settings.php?section=enrolsettingsautoenrol
 
 ### How to create quizzes and forums for CHiLO Book
 https://github.com/cccties/moodle-theme_chilo/wiki
