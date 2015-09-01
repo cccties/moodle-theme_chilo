@@ -1,13 +1,5 @@
-/**
- * url に ibooks=1 を含む場合、className を追加し、window.name に 識別文字をセット
- * window.name または 存在すれば window.opener.name に識別文字があれば className を追加
- * window.opener は、新しい window や　tab を開いた場合に新しいページから開いた親ページを参照するための値。
- * クロスドメインでも参照できるので、有利。（今回は関係なし）
- * ただし、あまりにも便利で、いろいろなライブラリがハック的に値を格納しているかもしれないのが怖い点
- */
- 
- /* マイバッジのURL指定 */
- /* あなたがインストールしたMoodleのディレクトリに変更してください。※末尾が/で終わるようにする */
+ /* Specify URL of My Badges */
+ /* Modify to the Moodle directory you intalled.※Be sure to end with "/" */
 var moodleroot = '/';
 
 (function( window, document ){
