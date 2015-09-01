@@ -34,7 +34,7 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
 
 **ナビゲーション設定**
 
- 1. ログインしたユーザのホームページを「マイトップページ」から「サイトトップページ」に変更する
+ 1. Moodleから配信するCHiLOBookの一覧をユーザのデフォルトホームページに表示するため「ダッシュボード」から「サイト」に変更する
  
     http://moodleroot/admin/settings.php?section=navigation
 
@@ -48,14 +48,6 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
  2. 全てのMoodleコースの完了トラッキングを有効にする
  
     http://moodleroot/admin/settings.php?section=coursesettings
-
-
-**活動名自動リンクの設定変更**
-
- 1. CHiLO Bookと関係のないMoodleコースに自動的にリンクされるのを防ぐため、「活動名自動リンク」を無効にする
- 
-    http://yourdomain/admin/filters.php
- 
 
 **AutoEnrol**
 
