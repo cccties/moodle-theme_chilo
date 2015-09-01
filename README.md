@@ -51,7 +51,11 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
 
 **AutoEnrol**
 
- 1. 作成する全てのMoodleコースに対してAutoEnrolを有効にする
+ 1. 利用可能なコース登録プラグインでAutoEnrolを有効にする
+ 
+    http://_root you installed_/admin/settings.php?section=manageenrols
+
+ 2. 作成する全てのMoodleコースに対してAutoEnrolを有効にする
  
     http://_root you installed_/admin/settings.php?section=enrolsettingsautoenrol
 
