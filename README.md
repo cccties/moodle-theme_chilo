@@ -59,6 +59,17 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
  
     http://_root you installed_/admin/settings.php?section=enrolsettingsautoenrol
 
+**ゲストアクセス**
+
+CHiLO ReaderアプリからCHiLO Bookをダウンロードする際、CHiLO Bookファイルまでのアクセスが途中で止まらないようにするため、ゲストアクセスとゲストオートログインの許可をしておきます。
+
+ 1. コース作成時のゲストアクセス許可のデフォルト設定を有効にする
+ 
+    http://_root you installed_/admin/settings.php?section=enrolsettingsguest
+
+ 2. コースアクセス時のゲストオートログインを有効にする
+ 
+    http://_root you installed_/admin/settings.php?section=userpolicies
 
 ## CHiLO Book用のクイズ・フォーラムの作り方
 
