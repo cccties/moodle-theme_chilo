@@ -30,47 +30,6 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
     patch -p0 < weblib.patch  
 (patch コマンドが見つからない場合はpatchをインストールしてください)
 
-## CHiLO のためのMoodle設定
-
-**ナビゲーション設定**
-
- 1. Moodleから配信するCHiLOBookの一覧をユーザのデフォルトホームページに表示するため「ダッシュボード」から「サイト」に変更する
- 
-    http://_root you installed_/admin/settings.php?section=navigation
-
-
-**完了トラッキング設定**
-
- 1. Moodle Quiz モジュールの結果によりバッジを発行するため、完了トラッキングを有効にする
- 
-    http://_root you installed_/admin/settings.php?section=optionalsubsystems
-
- 2. 全てのMoodleコースの完了トラッキングを有効にする
- 
-    http://_root you installed_/admin/settings.php?section=coursesettings
-
-**AutoEnrol**
-
- 1. 利用可能なコース登録プラグインでAutoEnrolを有効にする
- 
-    http://_root you installed_/admin/settings.php?section=manageenrols
-
- 2. 作成する全てのMoodleコースに対してAutoEnrolを有効にする
- 
-    http://_root you installed_/admin/settings.php?section=enrolsettingsautoenrol
-
-**ゲストアクセス**
-
-CHiLO ReaderアプリからCHiLO Bookをダウンロードする際、CHiLO Bookファイルまでのアクセスが途中で止まらないようにするため、ゲストアクセスとゲストオートログインの許可をしておきます。
-
- 1. コース作成時のゲストアクセス許可のデフォルト設定を有効にする
- 
-    http://_root you installed_/admin/settings.php?section=enrolsettingsguest
-
- 2. コースアクセス時のゲストオートログインを有効にする
- 
-    http://_root you installed_/admin/settings.php?section=userpolicies
-
 ## CHiLO Book用のクイズ・フォーラムの作り方
 
 https://github.com/cccties/moodle-theme_chilo/wiki
@@ -116,32 +75,6 @@ This theme is created by customizing Moodle2.6 Clean theme.
 6. Move to the directory of Moodle and execute the following patch command.
     patch -p0 < weblib.patch  
 (If you cannot find the patch command, install patch.)
-
-## How to set Moodle for CHiLO
-
-**Navigation Setting**
-
- 1. Modify the default home page for users from "Dashboard" to "Site" in order to display the CHiLO Book list distributed from Moodle.
- 
-    http://_root you installed_/admin/settings.php?section=navigation
-
-
-**Completion Tracking Setting**
-
- 1. Badges are issued according to the results of the Moodle Quiz module, so enable completion tracking.
- 
-    http://_root you installed_/admin/settings.php?section=optionalsubsystems
-
- 2. Enable completion tracking of all Moodle courses
- 
-    http://_root you installed_/admin/settings.php?section=coursesettings
-
-
-**AutoEnrol**
-
- 1. Enable AutoEnrol of all the Moodle courses.
- 
-    http://_root you installed_/admin/settings.php?section=enrolsettingsautoenrol
 
 ### How to create quizzes and forums for CHiLO Book
 https://github.com/cccties/moodle-theme_chilo/wiki
