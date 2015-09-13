@@ -1,4 +1,4 @@
-English version is [HERE](#english).
+English version is [HERE](#top_e).
 
 # <a name="top">The "Chilo" Moodle Theme</a>
 
@@ -111,10 +111,18 @@ This file is released on the GNU Public License (GPL) v3. (see [LICENSE.txt](LIC
 
 
 ***
+Japanese version is [HERE](#top).
 
+# <a name="top_e">The "Chilo" Moodle Theme</a>
 
+* [Recommended Environment](#no_1_e)
+* [Installation](#no_2_e)
+* [Configration Moodle for CHiLO](#no_3_e)
+* [How to create quizzes and forums for CHiLO Book](#no_4_e)
+* [Inquiries](#no_5_e)
+* [Licensing](#no_6_e)
+ 
 
-# <a name="english">The "Chilo" Moodle Theme</a>
 
 After configuring Chilo theme, you can hide the menues and links of Moodle that the users would not use in order to reduce mistakes in operating.
 
@@ -125,14 +133,16 @@ This theme is created by customizing Moodle2.6 Clean theme.
 [Screen before application of the theme](image1.png)  
 [Screen after the application of the theme](image2.png)  
 　
+[top↑](#top)
 
-## Recommended Environment
+## <a name="no_1_e">Recommended Environment</a>
 
 * Moodle 2.6 or higher 
 * UNIX-like OS  
 
+[top↑](#top)
 
-## Installation
+## <a name="no_2_e">Installation</a>
 
 1. Install Moodle 2.6 or higher.
 2. Download Chilo theme( https://github.com/cccties/moodle-theme_chilo/archive/master.zip
@@ -144,7 +154,9 @@ This theme is created by customizing Moodle2.6 Clean theme.
     patch -p0 < weblib.patch  
 (If you cannot find the patch command, install patch.)
 
-## Configration Moodle for CHiLO
+[top↑](#top)
+
+## <a name="no_3_e">Configration Moodle for CHiLO</a>
 
 ### Navigation Setting
 
@@ -188,18 +200,22 @@ When downloading CHiLO Books form CHiLO Reader App, allow guest access and guest
  
     http://_root you installed_/admin/settings.php?section=enrolsettingsautoenrol
 
+[top↑](#top)
 
-## How to create quizzes and forums for CHiLO Book
+## <a name="no_4_e">How to create quizzes and forums for CHiLO Book</a>
+
 https://github.com/cccties/moodle-theme_chilo/wiki
 
+[top↑](#top)
 
-## Inquiries
+## <a name="no_5_e">Inquiries</a>
 
 Enter any inquiries, opinions, or requests concernig the software.
 -> [Issues](https://github.com/cccties/moodle-theme_chilo/issues)
 
+[top↑](#top)
 
-## Licensing
+## <a name="no_6_e">Licensing</a>
 
 This file is released on the GNU Public License (GPL) v3. (see [LICENSE.txt](LICENSE.txt)) 
 
