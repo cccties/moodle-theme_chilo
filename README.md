@@ -133,14 +133,14 @@ This theme is created by customizing Moodle2.6 Clean theme.
 [Screen before application of the theme](image1.png)  
 [Screen after the application of the theme](image2.png)  
 　
-[top↑](#top)
+[top↑](#top_e)
 
 ## <a name="no_1_e">Recommended Environment</a>
 
 * Moodle 2.6 or higher 
 * UNIX-like OS  
 
-[top↑](#top)
+[top↑](#top_e)
 
 ## <a name="no_2_e">Installation</a>
 
@@ -154,7 +154,7 @@ This theme is created by customizing Moodle2.6 Clean theme.
     patch -p0 < weblib.patch  
 (If you cannot find the patch command, install patch.)
 
-[top↑](#top)
+[top↑](#top_e)
 
 ## <a name="no_3_e">Configration Moodle for CHiLO</a>
 
@@ -200,20 +200,20 @@ When downloading CHiLO Books form CHiLO Reader App, allow guest access and guest
  
     http://_root you installed_/admin/settings.php?section=enrolsettingsautoenrol
 
-[top↑](#top)
+[top↑](#top_e)
 
 ## <a name="no_4_e">How to create quizzes and forums for CHiLO Book</a>
 
 https://github.com/cccties/moodle-theme_chilo/wiki
 
-[top↑](#top)
+[top↑](#top_e)
 
 ## <a name="no_5_e">Inquiries</a>
 
 Enter any inquiries, opinions, or requests concernig the software.
 -> [Issues](https://github.com/cccties/moodle-theme_chilo/issues)
 
-[top↑](#top)
+[top↑](#top_e)
 
 ## <a name="no_6_e">Licensing</a>
 
