@@ -1,5 +1,15 @@
 English version is [HERE](#english).
+
 # The "Chilo" Moodle Theme
+
+* [推奨環境](# no_1)
+* [インストール](# no_2)
+* [CHiLO用Moodle設定](# no_3)
+* [CHiLO Book用のクイズ・フォーラムの作り方](# no_4)
+* [課題・質問](# no_5)
+* [Licensing](# no_6)
+
+
 
 Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMoodleのメニューやリンクを非表示にし、ユーザーの操作ミスを防ぐことができます。
 
@@ -11,13 +21,16 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
 [テーマ適用後の画面](image2.png)  
 　
 
-## 推奨環境 
+
+<a name="no_1">## 推奨環境</a>
 
 ・ Moodleの2.6以上  
-・ UNIX 系 OS  
+・ UNIX 系 OS
+CHiLO用Moodle設定
 
 
-## インストール 
+
+<a name="no_2">## インストール</a> 
 
 1. Moodle 2.6 以上をインストールします。
 2. GitHubから Chiloテーマ( https://github.com/cccties/moodle-theme_chilo/archive/master.zip
@@ -30,16 +43,18 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
     patch -p0 < weblib.patch  
 (patch コマンドが見つからない場合はpatchをインストールしてください)
 
-## CHiLO のためのMoodle設定
 
-### ナビゲーション設定
+
+<a name="no_2">## CHiLO用Moodle設定</a>
+
+### ナビゲーション
 
 1. Moodleから配信するCHiLOBookの一覧をユーザのデフォルトホームページに表示するため「ダッシュボード」から「サイト」に変更する
  
     http://_root you installed_/admin/settings.php?section=navigation
 
 
-### 完了トラッキング設定
+### 完了トラッキング
 
 1. Moodle Quiz モジュールの結果によりバッジを発行するため、完了トラッキングを有効にする
  
@@ -49,7 +64,7 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
  
     http://_root you installed_/admin/settings.php?section=coursesettings
 
-### ゲストアクセス設定
+### ゲストアクセス
 
 CHiLO ReaderアプリからCHiLO Bookをダウンロードする際、CHiLO Bookファイルまでのアクセスが途中で止まらないようにするため、ゲストアクセスとゲストオートログインの許可をしておきます。
 
@@ -61,7 +76,7 @@ CHiLO ReaderアプリからCHiLO Bookをダウンロードする際、CHiLO Book
  
     http://_root you installed_/admin/settings.php?section=userpolicies
 
-### 自動登録設定
+### 自動登録
 
 *自動登録を行う場合は、プラグインをインストールする必要があります。<br>
 （see https://moodle.org/plugins/view/enrol_autoenrol ）
@@ -76,17 +91,20 @@ CHiLO ReaderアプリからCHiLO Bookをダウンロードする際、CHiLO Book
 
 
 
-## CHiLO Book用のクイズ・フォーラムの作り方
+<a name="no_4">## CHiLO Book用のクイズ・フォーラムの作り方</a>
 
 https://github.com/cccties/moodle-theme_chilo/wiki
     
 
-## 課題・質問
+
+<a name="no_5">## 課題・質問</a>
 
 このソフトの課題、質問、及び要望はこちらにご記載ください。
 -> [Issues](https://github.com/cccties/moodle-theme_chilo/issues)
 
-## Licensing
+
+
+<a name="no_6">## Licensing</a>
 
 This file is released on the GNU Public License (GPL) v3. (see [LICENSE.txt](LICENSE.txt)) 
 
@@ -95,7 +113,7 @@ This file is released on the GNU Public License (GPL) v3. (see [LICENSE.txt](LIC
 
 
 
-# <a name="english">The "Chilo" Moodle Theme
+# <a name="english">The "Chilo" Moodle Theme</a>
 
 After configuring Chilo theme, you can hide the menues and links of Moodle that the users would not use in order to reduce mistakes in operating.
 
