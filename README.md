@@ -2,12 +2,12 @@ English version is [HERE](#english).
 
 # The "Chilo" Moodle Theme
 
-* [推奨環境](# no_1)
-* [インストール](# no_2)
-* [CHiLO用Moodle設定](# no_3)
-* [CHiLO Book用のクイズ・フォーラムの作り方](# no_4)
-* [課題・質問](# no_5)
-* [Licensing](# no_6)
+* [推奨環境](#no_1)
+* [インストール](#no_2)
+* [CHiLO用Moodle設定](#no_3)
+* [CHiLO Book用のクイズ・フォーラムの作り方](#no_4)
+* [課題・質問](#no_5)
+* [Licensing](#no_6)
 
 
 
