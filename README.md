@@ -1,6 +1,6 @@
 English version is [HERE](#english).
 
-# The "Chilo" Moodle Theme
+# <a name="top">The "Chilo" Moodle Theme</a>
 
 * [推奨環境](#no_1)
 * [インストール](#no_2)
@@ -22,7 +22,7 @@ Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMo
 　
 
 
-## <a name="no_1">推奨環境</a>
+## <a name="no_1">推奨環境</a> [top↑](#top)
 
 ・ Moodleの2.6以上  
 ・ UNIX 系 OS
@@ -30,7 +30,7 @@ CHiLO用Moodle設定
 
 
 
-## <a name="no_2">インストール</a> 
+## <a name="no_2">インストール</a> [top↑](#top) 
 
 1. Moodle 2.6 以上をインストールします。
 2. GitHubから Chiloテーマ( https://github.com/cccties/moodle-theme_chilo/archive/master.zip
@@ -45,7 +45,7 @@ CHiLO用Moodle設定
 
 
 
-## <a name="no_2">CHiLO用Moodle設定</a>
+## <a name="no_3">CHiLO用Moodle設定</a> [top↑](#top)
 
 ### ナビゲーション
 
@@ -91,20 +91,20 @@ CHiLO ReaderアプリからCHiLO Bookをダウンロードする際、CHiLO Book
 
 
 
-## <a name="no_4">CHiLO Book用のクイズ・フォーラムの作り方</a>
+## <a name="no_4">CHiLO Book用のクイズ・フォーラムの作り方</a> [top↑](#top)
 
 https://github.com/cccties/moodle-theme_chilo/wiki
     
 
 
-## <a name="no_5">課題・質問</a>
+## <a name="no_5">課題・質問</a> [top↑](#top)
 
 このソフトの課題、質問、及び要望はこちらにご記載ください。
 -> [Issues](https://github.com/cccties/moodle-theme_chilo/issues)
 
 
 
-## <a name="no_6">Licensing</a>
+## <a name="no_6">Licensing</a> [top↑](#top)
 
 This file is released on the GNU Public License (GPL) v3. (see [LICENSE.txt](LICENSE.txt)) 
 
