@@ -90,7 +90,10 @@ https://github.com/cccties/moodle-theme_chilo/wiki
 
 This file is released on the GNU Public License (GPL) v3. (see [LICENSE.txt](LICENSE.txt)) 
 
+
 ***
+
+
 
 # <a name="english">The "Chilo" Moodle Theme
 
@@ -171,12 +174,13 @@ When downloading CHiLO Books form CHiLO Reader App, allow guest access and guest
 https://github.com/cccties/moodle-theme_chilo/wiki
 
 
-### Inquiries
+## Inquiries
 
 Enter any inquiries, opinions, or requests concernig the software.
 -> [Issues](https://github.com/cccties/moodle-theme_chilo/issues)
 
-### Licensing
+
+## Licensing
 
 This file is released on the GNU Public License (GPL) v3. (see [LICENSE.txt](LICENSE.txt)) 
 
