@@ -2,6 +2,14 @@ English version is [HERE](#top_e).
 
 # <a name="top">The "Chilo" Moodle Theme</a>
 
+Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMoodleのメニューやリンクを非表示にし、ユーザーの操作ミスを防ぐことができます。
+
+このソフトウェアは、[_CHiLO_](http://www.cccties.org/activities/chilo/)Ⓡ の一部として提供されています。
+
+このテーマは、Moodle2.6 Clean themeをカスタマイズして作成されています。
+
+[元の画面](image1.png) → [テーマ適用後の画面](image2.png)  
+
 * [推奨環境](#no_1)
 * [インストール](#no_2)
 * [CHiLO用Moodle設定](#no_3)
@@ -10,18 +18,6 @@ English version is [HERE](#top_e).
 * [Licensing](#no_6)
 
 
-
-Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMoodleのメニューやリンクを非表示にし、ユーザーの操作ミスを防ぐことができます。
-
-このソフトウェアは、[_CHiLO_](http://www.cccties.org/activities/chilo/)Ⓡ の一部として提供されています。
-
-このテーマは、Moodle2.6 Clean themeをカスタマイズして作成されています。
-
-[元の画面](image1.png)  
-[テーマ適用後の画面](image2.png)  
-　
-
-[top↑](#top)
 
 ## <a name="no_1">推奨環境</a> 
 
@@ -115,6 +111,15 @@ Japanese version is [HERE](#top).
 
 # <a name="top_e">The "Chilo" Moodle Theme</a>
 
+After configuring Chilo theme, you can hide the menues and links of Moodle that the users would not use in order to reduce mistakes in operating.
+
+This software is provided as a part of [_CHiLO_](http://www.cccties.org/activities/chilo/)Ⓡ.
+
+This theme is created by customizing Moodle2.6 Clean theme.
+
+[Screen before application of the theme](image1.png)  → [Screen after the application of the theme](image2.png)  
+
+
 * [Recommended Environment](#no_1_e)
 * [Installation](#no_2_e)
 * [Configration Moodle for CHiLO](#no_3_e)
@@ -123,17 +128,6 @@ Japanese version is [HERE](#top).
 * [Licensing](#no_6_e)
  
 
-
-After configuring Chilo theme, you can hide the menues and links of Moodle that the users would not use in order to reduce mistakes in operating.
-
-This software is provided as a part of [_CHiLO_](http://www.cccties.org/activities/chilo/)Ⓡ.
-
-This theme is created by customizing Moodle2.6 Clean theme.
-
-[Screen before application of the theme](image1.png)  
-[Screen after the application of the theme](image2.png)  
-　
-[top↑](#top_e)
 
 ## <a name="no_1_e">Recommended Environment</a>
 
