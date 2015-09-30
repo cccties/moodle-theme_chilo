@@ -110,12 +110,11 @@ Japanese version is [HERE](#top).
 
 # <a name="top_e">The "Chilo" Moodle Theme</a>
 
-After configuring Chilo theme, you can hide the menues and links of Moodle that the users would not use in order to reduce mistakes in operating. [Screen before application of the theme](image1.png)  → [Screen after the application of the theme](image2.png) 
+In order to reduce  operational errors, hide the menues and links of Moodle which would not be used after configuring Chilo theme.  [Original screen](image1.png)  → [Screen after the application of the theme](image2.png) 
 
 This software is provided as a part of [_CHiLO_](http://www.cccties.org/activities/chilo/)Ⓡ.
 
 This theme is created by customizing Moodle2.6 Clean theme.
-
 
 
 * [Recommended Environment](#no_1_e)
@@ -152,7 +151,7 @@ This theme is created by customizing Moodle2.6 Clean theme.
 
 ### Navigation Setting
 
-1. Modify the default home page for users from "Dashboard" to "Site" in order to display the CHiLO Book list distributed from Moodle.
+1. In order to display the list of CHiLO Books distributed from Moodle on the user default home page, modify the setting from "Dashboard" to "Site".
  
     http://_root you installed_/admin/settings.php?section=navigation
 
