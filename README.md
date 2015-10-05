@@ -119,7 +119,7 @@ This theme is created by customizing Moodle2.6 Clean theme.
 
 * [Recommended Environment](#no_1_e)
 * [Installation](#no_2_e)
-* [Configration Moodle for CHiLO](#no_3_e)
+* [Configuration of Moodle for CHiLO](#no_3_e)
 * [How to create quizzes and forums for CHiLO Book](#no_4_e)
 * [Inquiries](#no_5_e)
 * [Licensing](#no_6_e)
