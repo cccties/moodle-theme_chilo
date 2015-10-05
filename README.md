@@ -106,7 +106,7 @@ This file is released on the GNU Public License (GPL) v3. (see [LICENSE.txt](LIC
 
 
 ***
-Japanese version is [HERE](#top).
+日本語版は[こちら](#top).
 
 # <a name="top_e">The "Chilo" Moodle Theme</a>
 
