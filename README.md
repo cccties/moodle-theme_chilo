@@ -129,7 +129,7 @@ This theme is created by customizing Moodle2.6 Clean theme.
 ## <a name="no_1_e">Recommended Environment</a>
 
 * Moodle 2.6 or higher 
-* UNIX-like OS  
+* UNIX-like OS Configuration of Moodle for CHiLO 
 
 [top↑](#top_e)
 
@@ -138,10 +138,12 @@ This theme is created by customizing Moodle2.6 Clean theme.
 1. Install Moodle 2.6 or higher.
 2. Download Chilo theme( https://github.com/cccties/moodle-theme_chilo/archive/master.zip
 )from GitHub then expand.
-3. Move the expanded _chilo/_ on to _moodle/theme/_ of the Moodle downloaded server.
-4. Configure the Chilo theme from the Moodle administrator menue _"Site > Notice"_.
-5. Move the expanded _weblib.patch_ on to _moodle/_ of the Moodle downloaded server.
-6. Move to the directory of Moodle and execute the following patch command.
+3. Move the expanded _chilo/_ to _moodle/theme/_ of the sever where Moodle is installed.
+4. Alter the _var moodleroot_ value entered in _chilo/javascript/styleSwitcher.js_ to the directory of Moodle you installed. 
+<br> e.g.) <br>var moodleroot = '/'; <br>var moodleroot = '/moodle/'; 
+5.Configure the Chilo theme from the Moodle administrator menue _"Site > Notice"_.
+6. Move the expanded _weblib.patch_ to _moodle/_ of the server where Moodle is installed.
+7. Move to the directory of Moodle you installed and execute the following patch command.
     patch -p0 < weblib.patch  
 (If you cannot find the patch command, install patch.)
 
