@@ -141,7 +141,7 @@ This theme is created by customizing Moodle2.6 Clean theme.
 4. Alter the _var moodleroot_ value entered in _chilo/javascript/styleSwitcher.js_ to the directory of Moodle you installed.<br> e.g.) <br>var moodleroot = '/'; <br>var moodleroot = '/moodle/'; 
 5. Configure the Chilo theme from the Moodle administrator menue _"Site > Notice"_.
 6. Move the expanded _weblib.patch_ to _moodle/_ of the server where Moodle is installed.
-7. Move to the directory of Moodle you installed and execute the following patch command.
+7. Move to the directory of Moodle you installed and execute the following patch command.  
     patch -p0 < weblib.patch  
 (If you cannot find the patch command, install patch.)
 
