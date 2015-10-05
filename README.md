@@ -201,7 +201,7 @@ https://github.com/cccties/moodle-theme_chilo/wiki
 
 ## <a name="no_5_e">Inquiries</a>
 
-Enter any inquiries, opinions, or requests concernig the software.
+Enter any inquiries, opinions, or requests concernig this software.
 -> [Issues](https://github.com/cccties/moodle-theme_chilo/issues)
 
 [top↑](#top_e)
