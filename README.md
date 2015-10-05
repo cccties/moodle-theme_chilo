@@ -136,12 +136,10 @@ This theme is created by customizing Moodle2.6 Clean theme.
 ## <a name="no_2_e">Installation</a>
 
 1. Install Moodle 2.6 or higher.
-2. Download Chilo theme( https://github.com/cccties/moodle-theme_chilo/archive/master.zip
-)from GitHub then expand.
+2. Download Chilo theme( https://github.com/cccties/moodle-theme_chilo/archive/master.zip )from GitHub then expand.
 3. Move the expanded _chilo/_ to _moodle/theme/_ of the sever where Moodle is installed.
-4. Alter the _var moodleroot_ value entered in _chilo/javascript/styleSwitcher.js_ to the directory of Moodle you installed. 
-<br> e.g.) <br>var moodleroot = '/'; <br>var moodleroot = '/moodle/'; 
-5.Configure the Chilo theme from the Moodle administrator menue _"Site > Notice"_.
+4. Alter the _var moodleroot_ value entered in _chilo/javascript/styleSwitcher.js_ to the directory of Moodle you installed.<br> e.g.) <br>var moodleroot = '/'; <br>var moodleroot = '/moodle/'; 
+5. Configure the Chilo theme from the Moodle administrator menue _"Site > Notice"_.
 6. Move the expanded _weblib.patch_ to _moodle/_ of the server where Moodle is installed.
 7. Move to the directory of Moodle you installed and execute the following patch command.
     patch -p0 < weblib.patch  
@@ -211,5 +209,3 @@ Enter any inquiries, opinions, or requests concernig the software.
 ## <a name="no_6_e">Licensing</a>
 
 This file is released on the GNU Public License (GPL) v3. (see [LICENSE.txt](LICENSE.txt)) 
-
- 
