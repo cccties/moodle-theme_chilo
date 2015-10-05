@@ -102,7 +102,7 @@ https://github.com/cccties/moodle-theme_chilo/wiki
 
 ## <a name="no_6">Licensing</a>
 
-This file is released on the GNU Public License (GPL) v3. (see [LICENSE.txt](LICENSE.txt)) 
+The CHiLO theme is 'free' software under the terms of the GNU GPLv3 License. (see [LICENSE.txt](LICENSE.txt)) 
 
 
 ***
@@ -208,4 +208,4 @@ Enter any inquiries, opinions, or requests concernig the software.
 
 ## <a name="no_6_e">Licensing</a>
 
-This file is released on the GNU Public License (GPL) v3. (see [LICENSE.txt](LICENSE.txt)) 
+The CHiLO theme is 'free' software under the terms of the GNU GPLv3 License. (see [LICENSE.txt](LICENSE.txt)) 
