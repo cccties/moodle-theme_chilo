@@ -1,0 +1,105 @@
+CHiLO themeはClean theme（version：2015111600）を変更して作成しています。
+
+（変更内容）
+
+1)
+. 引数”chiloflag”に従って適用するレイアウトを変更するスクリプトを追加
+
+[対象ファイル]
+clean/javascript/styleSwitcher.js
+
+
+
+2)
+・引数”chiloflag”を・setChiloFlagIntoJS()に引き渡す前処理を行う関数を追加
+function setChiloFlagIntoJS($page) {
+}
+
+[対象ファイル]
+clean/lib.php
+
+
+
+3)
+・setChiloFlagIntoJS()の呼び出し
+<?php setChiloFlagIntoJS(); ?>
+
+・styleSwitcher.jsの読み込み
+<script src="/theme/chilo/javascript/styleSwitcher.js"></script>
+
+[対象ファイル]
+clean/layout/columns1.php
+clean/layout/columns2.php
+clean/layout/columns3.php
+clean/layout/embedded.php
+clean/layout/maintenance.php
+clean/layout/secure.php
+
+
+
+4)
+. スタイルシートの追加
+
+[対象ファイル]
+clean/style/custom.css
+
+
+
+5).
+・テーマ名の変更
+clean -> chilo
+Clean -> Chilo
+
+[対象ファイル]
+clean/classes/core_renderer.php
+clean/lang/en/theme_clean.php
+clean/layout/columns1.php
+clean/layout/columns2.php
+clean/layout/columns3.php
+clean/layout/embedded.php
+clean/layout/maintenance.php
+clean/layout/secure.php
+clean/config.php
+clean/lib.php
+clean/settings.php
+clean/version.php
+
+
+
+6).
+ファビコンの変更
+
+[対象ファイル]
+clean/pix/favicon.ico
+
+
+
+7)
+・その他
+
+(コメントアウト)
+$THEME->enable_dock = true;
+
+(追加)
+$THEME->plugins_exclude_sheets = array(
+    'block' => array(
+        'html',
+    ),
+);
+
+[対象ファイル]
+clean/config.php
+
+
+
+8)
+・その他
+
+(コメントアウト)
+if (!array_key_exists('cacheability', $options)) {
+    $options['cacheability'] = 'public';
+}
+
+
+[対象ファイル]
+clean/lib.php
