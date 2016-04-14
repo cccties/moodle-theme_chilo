@@ -1,21 +1,22 @@
 /*
- * Moodleãƒ†ãƒ¼ãƒã‚«ã‚¹ã‚¿ãƒã‚¤ã‚º
+ * Moodleƒe[ƒ}ƒJƒXƒ^ƒ}ƒCƒY
  */
 
-/* è¦ç´ ã®éè¡¨ç¤º */
-	/* .simple-view h1, (4) ã‚¿ã‚¤ãƒˆãƒ«ã‚’éè¡¨ç¤ºã«ã™ã‚‹ */
+/* —v‘f‚Ì”ñ•\¦ */
+	/* .simple-view h1, (4) ƒ^ƒCƒgƒ‹‚ğ”ñ•\¦‚É‚·‚é */
+	.simple-view .menu > li:not(:last-child),          /* ƒiƒrƒo[‚Ìƒ†[ƒUî•ñ‚É‚ ‚éƒƒOƒCƒ“iƒƒOƒAƒEƒgjˆÈŠO */
 	.simple-view .brand,
 	.simple-view #page-navbar,
-	#page-enrol-index .simple-view .content,        /* (6) ã‚³ãƒ¼ã‚¹æƒ…å ± */
-	#page-enrol-index .simple-view .coursebox,      /* (6) ã‚³ãƒ¼ã‚¹æƒ…å ± */
-	/* #page-course-view-weeks .simple-view .content,  /* (6) ã‚³ãƒ¼ã‚¹æƒ…å ± ã‚¦ã‚£ãƒ¼ã‚¯ãƒªãƒ¼ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆ*/
-	/* #page-course-view-topics .simple-view .content, /* (6) ã‚³ãƒ¼ã‚¹æƒ…å ± ãƒˆãƒ”ãƒƒã‚¯ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆ*/
-	/* #page-course-view-social .simple-view .content, /* (6) ã‚³ãƒ¼ã‚¹æƒ…å ± ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆ*/
-	/* .simple-view #region-main h2,                   (6) ã‚³ãƒ¼ã‚¹æƒ…å ± å˜ä¸€æ´»å‹•ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆ  */
-	/* .simple-view #region-main #intro,               (6) ã‚³ãƒ¼ã‚¹æƒ…å ± å˜ä¸€æ´»å‹•ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆ  */
-	#page-login-confirm .simple-view .singlebutton, /* ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ç¢ºå®šãƒšãƒ¼ã‚¸ã®ã‚³ãƒ¼ã‚¹ãƒœã‚¿ãƒ³ã®éè¡¨ç¤º */
-	#page-grade-report-user-index .simple-view #choosepluginreport, /* (8) è¡¨ç¤ºãƒ¬ãƒãƒ¼ãƒˆã®ã‚»ãƒ¬ã‚¯ãƒˆé …ç›®*/
-	/* .simple-view .course-content > ul > li,  (7) ã‚³ãƒ¼ã‚¹ã‚»ã‚¯ã‚·ãƒ§ãƒ³ã‚’éè¡¨ç¤ºã«ã™ã‚‹ , ãŸã ã—æœ€ä¸Šæ®µã«ã‚ã‚‹ã‚»ã‚¯ã‚·ãƒ§ãƒ³ã¯è¡¨ç¤º */
+	#page-enrol-index .simple-view .content,           /* (6) ƒR[ƒXî•ñ */
+	#page-enrol-index .simple-view .coursebox,         /* (6) ƒR[ƒXî•ñ */
+	/* #page-course-view-weeks .simple-view .content,  /* (6) ƒR[ƒXî•ñ ƒEƒB[ƒNƒŠ[ƒtƒH[ƒ}ƒbƒg*/
+	/* #page-course-view-topics .simple-view .content, /* (6) ƒR[ƒXî•ñ ƒgƒsƒbƒNƒtƒH[ƒ}ƒbƒg*/
+	/* #page-course-view-social .simple-view .content, /* (6) ƒR[ƒXî•ñ ƒ\[ƒVƒƒƒ‹ƒtƒH[ƒ}ƒbƒg*/
+	/* .simple-view #region-main h2,                   (6) ƒR[ƒXî•ñ ’PˆêŠˆ“®ƒtƒH[ƒ}ƒbƒg  */
+	/* .simple-view #region-main #intro,               (6) ƒR[ƒXî•ñ ’PˆêŠˆ“®ƒtƒH[ƒ}ƒbƒg  */
+	#page-login-confirm .simple-view .singlebutton, /* ƒAƒJƒEƒ“ƒg‚ğŠm’èƒy[ƒW‚ÌƒR[ƒXƒ{ƒ^ƒ“‚Ì”ñ•\¦ */
+	#page-grade-report-user-index .simple-view #choosepluginreport, /* (8) •\¦ƒŒƒ|[ƒg‚ÌƒZƒŒƒNƒg€–Ú*/
+	/* .simple-view .course-content > ul > li,  (7) ƒR[ƒXƒZƒNƒVƒ‡ƒ“‚ğ”ñ•\¦‚É‚·‚é , ‚½‚¾‚µÅã’i‚É‚ ‚éƒZƒNƒVƒ‡ƒ“‚Í•\¦ */
 	.simple-view #block-region-side-pre,
 	.simple-view #block-region-side-post,
 	.simple-view #page-footer,
@@ -25,7 +26,7 @@
 		display : none !important;
 	}
 
-	/*  (7) ã‚³ãƒ¼ã‚¹ã‚»ã‚¯ã‚·ãƒ§ãƒ³ã‚’éè¡¨ç¤ºã«ã™ã‚‹ , ãŸã ã—æœ€ä¸Šæ®µã«ã‚ã‚‹ã‚»ã‚¯ã‚·ãƒ§ãƒ³ã¯è¡¨ç¤º
+	/*  (7) ƒR[ƒXƒZƒNƒVƒ‡ƒ“‚ğ”ñ•\¦‚É‚·‚é , ‚½‚¾‚µÅã’i‚É‚ ‚éƒZƒNƒVƒ‡ƒ“‚Í•\¦
 		.simple-view .course-content > ul > li#section-0,
 		.simple-view .course-content > ul > li#section-0 .content
 		{
@@ -33,7 +34,7 @@
 		}
 	*/
 
-/* è¦ç´ ã®æ¨ªå¹…ã‚’ç”»é¢ã„ã£ã±ã„ã«åºƒã’ã‚‹ */
+/* —v‘f‚Ì‰¡•‚ğ‰æ–Ê‚¢‚Á‚Ï‚¢‚ÉL‚°‚é */
 	.simple-view #page-content,
 	.simple-view #region-bs-main-and-pre,
 	.simple-view #region-post-box,
@@ -49,9 +50,9 @@
 	    position      : static !important;
 	}
 
-/* å·¦å´ã®ãƒŠãƒ“ã€ãƒ†ã‚¹ãƒˆä¸­ã¯è¡¨ç¤ºã™ã‚‹ */
-	#page-mod-quiz-attempt .simple-view #block-region-side-pre, /* ãƒ†ã‚¹ãƒˆä¸­ */
-	#page-mod-quiz-review  .simple-view #block-region-side-pre /* ãƒ¬ãƒ“ãƒ¥ãƒ¼  ?? */
+/* ¶‘¤‚ÌƒiƒrAƒeƒXƒg’†‚Í•\¦‚·‚é */
+	#page-mod-quiz-attempt .simple-view #block-region-side-pre, /* ƒeƒXƒg’† */
+	#page-mod-quiz-review  .simple-view #block-region-side-pre /* ƒŒƒrƒ…[  ?? */
 	{
 	    display       : block !important;
 	    margin        : 0 !important;
@@ -73,23 +74,23 @@
 	    margin-right : 0 !important;
 	}
 
-/* ç‰¹å®šã®ãƒšãƒ¼ã‚¸ã§hç³»éè¡¨ç¤º */
-	#page-my-index .simple-view h1, /* ãƒã‚¤ãƒšãƒ¼ã‚¸ */
-	#page-badges-mybadges .simple-view h1, /* ãƒãƒƒã‚¸ãƒšãƒ¼ã‚¸ */
-	#page-badges-mybadges .simple-view h2, /* ãƒãƒƒã‚¸ãƒšãƒ¼ã‚¸ */
-	#page-mod-quiz-view .simple-view h1, /* ã‚¯ã‚¤ã‚ºãƒšãƒ¼ã‚¸ */
-	#page-mod-quiz-attempt .simple-view h1, /* ã‚¯ã‚¤ã‚ºãƒšãƒ¼ã‚¸ */
-	#page-mod-quiz-summary .simple-view h1, /* ã‚¯ã‚¤ã‚ºãƒšãƒ¼ã‚¸ */
-	#page-mod-quiz-review .simple-view h1, /* ã‚¯ã‚¤ã‚ºãƒšãƒ¼ã‚¸ */
-	#page-grade-report-user-index .simple-view h2, /* è©•å®šãƒšãƒ¼ã‚¸ */
-	#page-mod-forum-view .simple-view h1, /* ãƒ•ã‚©ãƒ¼ãƒ©ãƒ ãƒšãƒ¼ã‚¸ */
-	#page-mod-forum-post .simple-view h1, /* ãƒ•ã‚©ãƒ¼ãƒ©ãƒ ãƒšãƒ¼ã‚¸ */
-	#page-mod-forum-discuss .simple-view h1 /* ãƒ•ã‚©ãƒ¼ãƒ©ãƒ ãƒšãƒ¼ã‚¸ */
+/* “Á’è‚Ìƒy[ƒW‚ÅhŒn”ñ•\¦ */
+	#page-my-index .simple-view h1, /* ƒ}ƒCƒy[ƒW */
+	#page-badges-mybadges .simple-view h1, /* ƒoƒbƒWƒy[ƒW */
+	#page-badges-mybadges .simple-view h2, /* ƒoƒbƒWƒy[ƒW */
+	#page-mod-quiz-view .simple-view h1, /* ƒNƒCƒYƒy[ƒW */
+	#page-mod-quiz-attempt .simple-view h1, /* ƒNƒCƒYƒy[ƒW */
+	#page-mod-quiz-summary .simple-view h1, /* ƒNƒCƒYƒy[ƒW */
+	#page-mod-quiz-review .simple-view h1, /* ƒNƒCƒYƒy[ƒW */
+	#page-grade-report-user-index .simple-view h2, /* •]’èƒy[ƒW */
+	#page-mod-forum-view .simple-view h1, /* ƒtƒH[ƒ‰ƒ€ƒy[ƒW */
+	#page-mod-forum-post .simple-view h1, /* ƒtƒH[ƒ‰ƒ€ƒy[ƒW */
+	#page-mod-forum-discuss .simple-view h1 /* ƒtƒH[ƒ‰ƒ€ƒy[ƒW */
 	{
 		display:none;
 	}
 
-/* ã‚¯ã‚¤ã‚ºãƒšãƒ¼ã‚¸  iframeå†…ã®ã‚¯ã‚¤ã‚ºã®æ™‚ã«è¨€èªåˆ‡ã‚Šæ›¿ãˆä»¥å¤–ã®ãƒŠãƒ“ãƒãƒ¼æƒ…å ±ã‚’éš ã™ */
+/* ƒNƒCƒYƒy[ƒW  iframe“à‚ÌƒNƒCƒY‚Ì‚ÉŒ¾ŒêØ‚è‘Ö‚¦ˆÈŠO‚Ìƒiƒrƒo[î•ñ‚ğ‰B‚· */
 	#page-mod-quiz-view .simple-view .logininfo,
 	#page-mod-quiz-attempt .simple-view .logininfo,
 	#page-mod-quiz-summary .simple-view .logininfo,
@@ -102,14 +103,14 @@
 		display:none;
 	}
 
-/* ãƒ¬ãƒƒã‚¹ãƒ³ãƒšãƒ¼ã‚¸  iframeå†…ã®ã‚¯ã‚¤ã‚ºã®æ™‚ã«è¨€èªåˆ‡ã‚Šæ›¿ãˆä»¥å¤–ã®ãƒŠãƒ“ãƒãƒ¼æƒ…å ±ã‚’éš ã™ */
+/* ƒŒƒbƒXƒ“ƒy[ƒW  iframe“à‚ÌƒNƒCƒY‚Ì‚ÉŒ¾ŒêØ‚è‘Ö‚¦ˆÈŠO‚Ìƒiƒrƒo[î•ñ‚ğ‰B‚· */
 	#page-mod-lesson-view .simple-view .logininfo,
 	#page-mod-lesson-view .simple-view #go-to-badge
 	{
 		display:none;
 	}
 
-/* ãƒã‚¤ãƒšãƒ¼ã‚¸ã®ã‚³ãƒ¼ã‚¹ä¸€è¦§ã®å¹…èª¿æ•´ */
+/* ƒ}ƒCƒy[ƒW‚ÌƒR[ƒXˆê——‚Ì•’²® */
 	#page-my-index .simple-view h2
 	{
 		font-size: 100%;
@@ -123,7 +124,7 @@
 		margin-bottom: 10px;
 	}
 
-/* ãƒ•ã‚©ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã«è³¼èª­ãƒœãƒƒã‚¯ã‚¹ã ã‘ã ã™ */
+/* ƒtƒH[ƒ€ƒy[ƒW‚Éw“Çƒ{ƒbƒNƒX‚¾‚¯‚¾‚· */
 	#page-mod-forum-view .simple-view #block-region-side-pre,
 	#page-mod-forum-view .simple-view #inst5
 	{
@@ -137,7 +138,7 @@
 		display:none !important;
 	}
 
-/* ãƒ•ã‚©ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã®ãƒ‘ãƒ³ããšã‚’è¡¨ç¤º */
+/* ƒtƒH[ƒ€ƒy[ƒW‚Ìƒpƒ“‚­‚¸‚ğ•\¦ */
 	#page-mod-forum-view .simple-view #page-navbar .clearfix,
 	#page-mod-forum-view .simple-view #page-header .clearfix,
 	#page-mod-forum-post .simple-view #page-navbar .clearfix,
@@ -148,7 +149,7 @@
 		display:block !important;
 	}
 
-/* ãƒ•ã‚©ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã®ãƒ‘ãƒ³ããšã§ãƒ•ã‚©ãƒ¼ãƒ©ãƒ ã«é–¢ä¿‚ãªã„ç®‡æ‰€ã‚’æ¶ˆã™*/
+/* ƒtƒH[ƒ€ƒy[ƒW‚Ìƒpƒ“‚­‚¸‚ÅƒtƒH[ƒ‰ƒ€‚ÉŠÖŒW‚È‚¢‰ÓŠ‚ğÁ‚·*/
 	#page-mod-forum-view .simple-view .breadcrumb li:nth-last-child(n+2),
 	#page-mod-forum-discuss .simple-view .breadcrumb li:nth-last-child(n+3),
 	#page-mod-forum-post .simple-view .breadcrumb li:nth-last-child(n+4)
@@ -156,7 +157,7 @@
 		display:none;
 	}
 
-/* ãƒ•ã‚©ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã®æ¤œç´¢ãƒãƒ¼ã‚’æ¶ˆã™*/
+/* ƒtƒH[ƒ€ƒy[ƒW‚ÌŒŸõƒo[‚ğÁ‚·*/
 	#page-mod-forum-view .simple-view .forumsearch,
 	#page-mod-forum-post .simple-view .forumsearch,
 	#page-mod-forum-discuss .simple-view .forumsearch
@@ -164,7 +165,20 @@
 		display:none;
 	}
 
-/* ãƒŠãƒ“ãƒãƒ¼ã®è¿½åŠ  */
+/* ƒtƒH[ƒ€ƒy[ƒW‚©‚çƒ†[ƒUî•ñ‚ÌƒŠƒ“ƒN‚ÉˆÚ“®‚Å‚«‚È‚¢‚æ‚¤‚É‚·‚é*/
+	#page-mod-forum-view .simple-view .picture a,
+	#page-mod-forum-view .simple-view .author a,
+	#page-mod-forum-view .simple-view .lastpost a,
+	#page-mod-forum-post .simple-view .picture a,
+	#page-mod-forum-post .simple-view .author a,
+	#page-mod-forum-discuss .simple-view .picture a,
+	#page-mod-forum-discuss .simple-view .author a
+	{
+		pointer-events:none;
+		color:#000000;
+	}
+
+/* ƒiƒrƒo[‚Ì’Ç‰Á */
 	/* mybadges */
 	#go-to-badge
 	 {
@@ -173,7 +187,7 @@
 		line-height : 30px;
 	}
 
-/* ä»¥ä¸‹ã¯ clean ãƒ†ãƒ¼ãƒã«ã‚‚ã¨ã‚‚ã¨è¨­å®šã•ã‚Œã¦ã„ãŸ 	css */
+/* ˆÈ‰º‚Í clean ƒe[ƒ}‚É‚à‚Æ‚à‚Æİ’è‚³‚ê‚Ä‚¢‚½ 	css */
 
 /* Custom CSS
 -------------------------*/

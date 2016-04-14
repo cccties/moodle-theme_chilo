@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Moodle's Clean theme, an example of how to make a Bootstrap theme
+ * Moodle's Chilo theme, an example of how to make a Bootstrap theme
  *
  * DO NOT MODIFY THIS THEME!
  * COPY IT FIRST, THEN RENAME THE COPY AND MODIFY IT INSTEAD.
@@ -41,7 +41,7 @@ $THEME->parents = array('bootstrapbase');
 $THEME->sheets = array('custom');
 $THEME->supportscssoptimisation = false;
 $THEME->yuicssmodules = array();
-
+//$THEME->enable_dock = true;
 $THEME->editor_sheets = array();
 
 $THEME->plugins_exclude_sheets = array(
@@ -52,8 +52,3 @@ $THEME->plugins_exclude_sheets = array(
 
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->csspostprocess = 'theme_chilo_process_css';
-
-$THEME->blockrtlmanipulations = array(
-    'side-pre' => 'side-post',
-    'side-post' => 'side-pre'
-);
