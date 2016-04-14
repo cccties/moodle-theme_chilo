@@ -2,11 +2,11 @@ English version is [HERE](#top_e).
 
 # <a name="top">The "Chilo" Moodle Theme</a>
 
-Chiloテーマを設定すると、CHiLO Bookのユーザーが利用しないMoodleのメニューやリンクを非表示にし、ユーザーの操作ミスを防ぐことができます。
+・Moodleのメニューやリンクを最小限にし、CHiLO Bookからリンクして利用するのに適したレイアウトに変更するテーマです。
 
-このソフトウェアは、[_CHiLO_](http://www.cccties.org/activities/chilo/)Ⓡ の一部として提供されています。
+・このテーマは、[_CHiLO_](http://www.cccties.org/activities/chilo/)Ⓡ の一部として提供されています。
 
-このテーマは、Moodle3.0 Clean themeをカスタマイズして作成されています。
+・このテーマは、Moodle3.0 Clean themeをカスタマイズして作成されています。
 
 * [推奨環境](#no_1)
 * [インストール](#no_2)
@@ -24,7 +24,7 @@ CHiLO用Moodle設定
 
 [top↑](#top)
 
-## <a name="no_2">インストール</a>
+## <a name="no_2">テーマのインストール</a>
 
 1. Moodle をインストールします。
 2. GitHubから Chiloテーマ( https://github.com/cccties/moodle-theme_chilo/archive/master.zip
@@ -34,41 +34,43 @@ CHiLO用Moodle設定
 
 [top↑](#top)
 
+## <a name="no_4">テーマのデフォルト設定</a>
+
+_theme/chilo/javascript/styleSwitcher.js_ の _ALLWAYS SIMPLE_ で、テーマのデフォルトレイアウトを定義します。
+
+ALLWAYS_SIMPLE = false,　ディフォルトのレイアウトはMoodleの標準レイアウトとする
+ALLWAYS_SIMPLE = true,　ディフォルトのレイアウトはChiloテーマのレイアウトとする
+
+```javascript
+(function( window, document ){
+var /* 初期値はfalseとなっています*/
+ALLWAYS_SIMPLE = false,
+```
+[top↑](#top)
+
+
+
+
 ## <a name="no_3">パラメータと引数</a>
 
-chilo テーマでカスタマイズされた画面を表示させるには、通常の moodleへのアクセスに使われる URL に対して、_chiloflag_ パラメータを付加します（GET メソッド）。  
-chiloflag パラメータはビットフラグにより機能を表現します（表 1）。
+moodleのURL に、_chiloflag_ パラメータを設定することでレイアウトを適用できます（GET メソッド）。  
 
 表1 chiloflag パラメータ
 
 |ビット|内容|
 |---|---|
-|0|chilo テーマの標準にする|
-|1|シンプル表示にする|
-|2|シンプル表示を解除する|
+|0|ALLWAYS_SIMPLEで設定したディフォルトレイアウトにする|
+|1|CHiLOテーマのレイアウトにする|
+|2|Moodleの標準テーマのレイアウトにする|
 
 以下に指定例を示します。
 
-* シンプル表示にする  
-http://example.net/course/view.php?id=2&chiloflag=1
-* シンプル表示を解除する  
+* CHiLOテーマのレイアウトにする
 http://example.net/course/view.php?id=2&chiloflag=2
-* chilo テーマの標準にする  
-http://example.net/course/view.php?id=2&chiloflag=0
 
 [top↑](#top)
 
-## <a name="no_4">テーマの標準設定</a>
 
-_theme/chilo/javascript/styleSwitcher.js_ の最初の方にある _ALLWAYS SIMPLE_ を _true_ に書き換えることで、
-chilo テーマの標準をシンプル表示にすることができます。
-
-```javascript
-(function( window, document ){
-var /* 常に デザインをシンプル化する場合は、true にします*/
-ALLWAYS_SIMPLE = false,
-```
-[top↑](#top)
 
 ## <a name="no_5">課題・質問</a>
 
