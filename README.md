@@ -2,7 +2,7 @@ English version is [HERE](#top_e).
 
 # <a name="top">The "Chilo" Moodle Theme</a>
 
-・Moodleのメニューやリンクを最小限にし、CHiLO Bookからリンクして利用するのに適したレイアウトに変更するテーマです。
+・Moodleのメニューやリンクを削除してCHiLO Bookに適したレイアウトにするテーマです。
 
 ・このテーマは、[_CHiLO_](http://www.cccties.org/activities/chilo/)Ⓡ の一部として提供されています。
 
@@ -19,8 +19,6 @@ English version is [HERE](#top_e).
 
 ・ Moodle 3.0以上  
 ・ UNIX 系 OS
-
-CHiLO用Moodle設定
 
 [top↑](#top)
 
