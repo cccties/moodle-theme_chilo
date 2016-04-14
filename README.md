@@ -116,7 +116,7 @@ This theme is created by customizing Moodle3.0 Clean theme.
 [top↑](#top_e)
 
 
-## <a name="no_3">テーマのデフォルト設定</a>
+## <a name="no_3_e">テーマのデフォルト設定</a>
 
 _theme/chilo/javascript/styleSwitcher.js_ の _ALLWAYS SIMPLE_ で、テーマのデフォルトレイアウトを定義します。
 
