@@ -37,6 +37,7 @@ English version is [HERE](#top_e).
 _theme/chilo/javascript/styleSwitcher.js_ の _ALLWAYS SIMPLE_ で、テーマのデフォルトレイアウトを定義します。
 
 ALLWAYS_SIMPLE = false,　ディフォルトのレイアウトはMoodleの標準レイアウトとする
+
 ALLWAYS_SIMPLE = true,　ディフォルトのレイアウトはChiloテーマのレイアウトとする
 
 ```javascript
