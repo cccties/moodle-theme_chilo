@@ -1,29 +1,26 @@
-/**
- * url ã« ibooks=1 ã‚’å«ã‚€å ´åˆã€className ã‚’è¿½åŠ ã—ã€window.name ã« è­˜åˆ¥æ–‡å­—ã‚’ã‚»ãƒƒãƒˆ
- * window.name ã¾ãŸã¯ å­˜åœ¨ã™ã‚Œã° window.opener.name ã«è­˜åˆ¥æ–‡å­—ãŒã‚ã‚Œã° className ã‚’è¿½åŠ 
- * window.opener ã¯ã€æ–°ã—ã„ window ã‚„ã€€tab ã‚’é–‹ã„ãŸå ´åˆã«æ–°ã—ã„ãƒšãƒ¼ã‚¸ã‹ã‚‰é–‹ã„ãŸè¦ªãƒšãƒ¼ã‚¸ã‚’å‚ç…§ã™ã‚‹ãŸã‚ã®å€¤ã€‚
- * ã‚¯ãƒ­ã‚¹ãƒ‰ãƒ¡ã‚¤ãƒ³ã§ã‚‚å‚ç…§ã§ãã‚‹ã®ã§ã€æœ‰åˆ©ã€‚ï¼ˆä»Šå›ã¯é–¢ä¿‚ãªã—ï¼‰
- * ãŸã ã—ã€ã‚ã¾ã‚Šã«ã‚‚ä¾¿åˆ©ã§ã€ã„ã‚ã„ã‚ãªãƒ©ã‚¤ãƒ–ãƒ©ãƒªãŒãƒãƒƒã‚¯çš„ã«å€¤ã‚’æ ¼ç´ã—ã¦ã„ã‚‹ã‹ã‚‚ã—ã‚Œãªã„ã®ãŒæ€–ã„ç‚¹
- */
+ /* Specify URL of My Badges */
+ /* Modify to the Moodle directory you intalled.¦Be sure to end with "/" */
+var moodleroot = '/';
+
 (function( window, document ){
-	var /* ãƒ‡ã‚¶ã‚¤ãƒ³ã‚’ã‚·ãƒ³ãƒ—ãƒ«åŒ–ã™ã‚‹å ´åˆã¯ã€true ã«ã—ã¾ã™*/
-		ALLWAYS_SIMPLE       = true,
+	var /* ƒfƒUƒCƒ“‚ğƒVƒ“ƒvƒ‹‰»‚·‚éê‡‚ÍAtrue ‚É‚µ‚Ü‚·*/
+		ALLWAYS_SIMPLE       = false,
 		
-		/* &chiloflag= 0, 1( iBooksã«æˆ»ã‚‹ ), 2( ã‚·ãƒ³ãƒ—ãƒ«è¡¨ç¤ºè§£é™¤ ), 3 ( iBooksã«æˆ»ã‚‹+ã‚·ãƒ³ãƒ—ãƒ«è¡¨ç¤ºè§£é™¤ ) */
+		/* &chiloflag= 0, 1( ƒVƒ“ƒvƒ‹•\¦ ), 2( ƒVƒ“ƒvƒ‹•\¦‰ğœ ) */
 		FLAG_NAME            = 'chiloflag',
 		
-		FLAG_RETURN_IBOOKS   = 1,
+		FLAG_SIMPLE          = 1,	
 		
 		FLAG_DISABLE_SIMPLE  = 2,	
 		
-		/* window.name ã«æ›¸ãè¾¼ã‚“ã§ style åŠ å·¥ã‚’ã™ã‚‹ã‹ï¼Ÿã‚’è­˜åˆ¥ã™ã‚‹ãŸã‚ã®æ–‡å­—åˆ— */
+		/* window.name ‚É‘‚«‚ñ‚Å style ‰ÁH‚ğ‚·‚é‚©H‚ğ¯•Ê‚·‚é‚½‚ß‚Ì•¶š—ñ */
 		WINDOW_NAME_MSG      = 'chiloflag=',
 		
-		/* style åŠ å·¥ã‚’ã™ã‚‹å ´åˆã«ã€ãƒ«ãƒ¼ãƒˆä»˜è¿‘ã®è¦ç´ ã«è¿½åŠ ã™ã‚‹ã‚¯ãƒ©ã‚¹å */
+		/* style ‰ÁH‚ğ‚·‚éê‡‚ÉAƒ‹[ƒg•t‹ß‚Ì—v‘f‚É’Ç‰Á‚·‚éƒNƒ‰ƒX–¼ */
 		SUPPLEMENT_CLASSNAME = 'simple-view',
 		
-		/* style åŠ å·¥ã‚’ã™ã‚‹å ´åˆã«ã€è¿½åŠ ã™ã‚‹è¦ç´ ã®IDã€ä»Šå›ã¯ body > div#page ãŒé©å½“ */
-		/* ã“ã®ä»–ã« header ã‚¿ã‚°ã«ã‚‚ã€ã€ã€ */
+		/* style ‰ÁH‚ğ‚·‚éê‡‚ÉA’Ç‰Á‚·‚é—v‘f‚ÌIDA¡‰ñ‚Í body > div#page ‚ª“K“– */
+		/* ‚±‚Ì‘¼‚É header ƒ^ƒO‚É‚àAAA */
 		ADD_CLASSNAME_TARGET = 'page',
 		
 		chiloFlag            = -1,  
@@ -43,12 +40,12 @@
 		};
 	};
 
-	// ãƒªãƒ€ã‚¤ãƒ¬ã‚¯ãƒˆæ™‚ã« cgi ã«ã‚ˆã£ã¦åŸ‹ã‚è¾¼ã¾ã‚Œã‚‹å€¤
+	// ƒŠƒ_ƒCƒŒƒNƒg‚É cgi ‚É‚æ‚Á‚Ä–„‚ß‚Ü‚ê‚é’l
 	if( typeof window[ 'redirectedForChilo' ] === 'number' ){
 		chiloFlag = window[ 'redirectedForChilo' ] || 0;
 	};
 
-	/* flag ãŒ true ã®å ´åˆã€window.name ã«æ–‡å­—åˆ—ã‚’æ›¸ãè¾¼ã‚€ */
+	/* flag ‚ª true ‚Ìê‡Awindow.name ‚É•¶š—ñ‚ğ‘‚«‚Ş */
 	if( 0 < chiloFlag ){
 		window.name = WINDOW_NAME_MSG + chiloFlag;
 	} else
@@ -56,11 +53,11 @@
 		window.name = '';
 		if( !ALLWAYS_SIMPLE ) return;
 	} else
-	/* ibooks ã«æˆ»ã‚‹ãƒœã‚¿ãƒ³ã‚’è¿½åŠ ã™ã‚‹ã‹? */
+	/* ibooks ‚É–ß‚éƒ{ƒ^ƒ“‚ğ’Ç‰Á‚·‚é‚©? */
 	if( window.name.indexOf( WINDOW_NAME_MSG ) !== -1 ){
 		chiloFlag = parseFloat( window.name.split( WINDOW_NAME_MSG )[ 1 ] ) || 0;
 	} else
-	/* window.opener ã« æ–‡å­—åˆ—ãŒã‚ã‚‹å ´åˆã€window.name ã«æ–‡å­—åˆ—ã‚’æ›¸ãè¾¼ã‚€ */
+	/* window.opener ‚É •¶š—ñ‚ª‚ ‚éê‡Awindow.name ‚É•¶š—ñ‚ğ‘‚«‚Ş */
 	if( window.opener && window.opener.name.indexOf( WINDOW_NAME_MSG ) !== -1 ){
 		window.name = window.opener.name;
 		chiloFlag = parseFloat( window.opener.name.split( WINDOW_NAME_MSG )[ 1 ] ) || 0;
@@ -73,8 +70,8 @@
 	document.write( '<style>html,body{margin:0;border:0;}</style>' );
 	
 /*
- * ã“ã® script ã¯ <head> å†…ã«é…ç½®ã•ã‚Œã¦ã„ã‚‹ãŸã‚ã€ã“ã®ã‚¿ã‚¤ãƒŸãƒ³ã‚°ã§ã¯ã€body ã®ä¸‹ã® div#page ã¯ç”Ÿæˆã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
- * ãã“ã§ã‚¿ã‚¤ãƒãƒ¼ã§ç›£è¦–ã—ã¦ã€div#page ã‚’ç¢ºèªå¾Œã« class ã‚’è¿½åŠ ã—ã¾ã™ã€‚
+ * ‚±‚Ì script ‚Í <head> “à‚É”z’u‚³‚ê‚Ä‚¢‚é‚½‚ßA‚±‚Ìƒ^ƒCƒ~ƒ“ƒO‚Å‚ÍAbody ‚Ì‰º‚Ì div#page ‚Í¶¬‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
+ * ‚»‚±‚Åƒ^ƒCƒ}[‚ÅŠÄ‹‚µ‚ÄAdiv#page ‚ğŠm”FŒã‚É class ‚ğ’Ç‰Á‚µ‚Ü‚·B
  */
 window.setTimeout(
 	function(){
@@ -94,24 +91,19 @@ window.setTimeout(
 		if( header = header[ 0 ] ){
 			if( !( chiloFlag & FLAG_DISABLE_SIMPLE ) ){
 				header.className += ' ' + SUPPLEMENT_CLASSNAME;
+
+				/* mybadges */
+
+				elm1 = document.createElement( 'a' );
+				div = header.children[ 0 ].children[ 0 ];
+				div.insertBefore( elm1, div.children[ 0 ] );
+				
+				elm1.href      = moodleroot + 'badges/mybadges.php';
+				elm1.innerHTML = 'My Badges';
+				elm1.id        = 'go-to-badge';
+
 			};
 			
-			/*
-			 * å¸¸ã«ã‚·ãƒ³ãƒ—ãƒ«è¡¨ç¤ºã«ã™ã‚‹æ–¹æ³•ï¼ˆã€ŒALLWAYS_SIMPLE  = trueã€ï¼‰ã‚’é©ç”¨ã—ãŸæ™‚ã¯ã€ã€ŒiBooksã¸æˆ»ã‚‹ã€ãƒªãƒ³ã‚¯ç”»åƒã¯è¡¨ç¤ºã•ã›ãªã„ã‚ˆã†ã«ã™ã‚‹ã€‚
-			 */
-			if( !( chiloFlag & FLAG_RETURN_IBOOKS ) ) return;
-			
-			/* ibooks ã«æˆ»ã‚‹ãƒœã‚¿ãƒ³ã®è¿½åŠ  */
-			elm = document.createElement( 'a' );
-			div = header.children[ 0 ].children[ 0 ];
-			div.insertBefore( elm, div.children[ 0 ] );
-			
-			elm.href      = 'ibooks:';
-			elm.innerHTML = '<img src="/theme/chilo/pix/returniBooks.png">';
-			elm.id        = 'back-to-ibooks';
-			
-			elm.onclick = new Function('try{window.open("","_self").close()}catch(e){}');
-			return;
 		};
 	}, 0
 );
@@ -127,7 +119,7 @@ window.onload = function(){
 	window.onload = null;
 	
 	switch( path ){
-		/* ã‚³ãƒ¼ã‚¹å…¥å£ãƒšãƒ¼ã‚¸ã«ã€ã‚³ãƒ¼ã‚¹ã‚’ç™»éŒ²ã€ã‚³ãƒ¼ã‚¹ã‚’è§£é™¤ ã®ãƒªãƒ³ã‚¯ã‚’è¿½åŠ  */
+		/* ƒR[ƒX“üŒûƒy[ƒW‚ÉAƒR[ƒX‚ğ“o˜^AƒR[ƒX‚ğ‰ğœ ‚ÌƒŠƒ“ƒN‚ğ’Ç‰Á */
 		case '/course/view.php' :
 			links = document.getElementsByTagName( 'a' );
 			for( i = 0, l = links.length; i < l; ++i ){
@@ -140,7 +132,7 @@ window.onload = function(){
 			};
 			break;
 		
-		/* ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ« ãƒšãƒ¼ã‚¸ã«å¯¾ã—ã¦ ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ç·¨é›†ã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰å¤‰æ›´ ãƒªãƒ³ã‚¯ã‚’è¿½åŠ  */
+		/* ƒvƒƒtƒB[ƒ‹ ƒy[ƒW‚É‘Î‚µ‚Ä ƒvƒƒtƒB[ƒ‹•ÒWAƒpƒXƒ[ƒh•ÏX ƒŠƒ“ƒN‚ğ’Ç‰Á */
 		case '/user/profile.php' :
 			links = document.getElementsByTagName( 'a' );
 			page.appendChild( elm = document.createElement( 'div' ) );

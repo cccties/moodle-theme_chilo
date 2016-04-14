@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Moodle's Clean theme, an example of how to make a Bootstrap theme
+ * Moodle's Chilo theme, an example of how to make a Bootstrap theme
  *
  * DO NOT MODIFY THIS THEME!
  * COPY IT FIRST, THEN RENAME THE COPY AND MODIFY IT INSTEAD.
@@ -30,9 +30,9 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2013121100;
-$plugin->requires  = 2013110500;
+$plugin->version   = 2015111600;
+$plugin->requires  = 2015111000;
 $plugin->component = 'theme_chilo';
 $plugin->dependencies = array(
-    'theme_bootstrapbase'  => 2013110500,
+    'theme_bootstrapbase'  => 2015111000,
 );
