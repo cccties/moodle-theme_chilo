@@ -14,6 +14,14 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * The embedded layout.
+ *
+ * @package   theme_
+ * @copyright 2013 Moodle, moodle.org
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
 <head>
@@ -22,7 +30,7 @@ echo $OUTPUT->doctype() ?>
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php setChiloFlagIntoJS(); ?>
-    <script src="<?php echo $CFG->wwwroot;?>/theme/chilo/javascript/styleSwitcher.js"></script>
+  <script src="<?php echo $CFG->wwwroot;?>/theme/chilo/javascript/styleSwitcher.js"></script>
 </head>
 
 <body <?php echo $OUTPUT->body_attributes(); ?>>

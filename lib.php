@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Moodle's Clean theme, an example of how to make a Bootstrap theme
+ * Moodle's Chilo theme, an example of how to make a Bootstrap theme
  *
  * DO NOT MODIFY THIS THEME!
  * COPY IT FIRST, THEN RENAME THE COPY AND MODIFY IT INSTEAD.
@@ -88,6 +88,12 @@ function theme_chilo_set_logo($css, $logo) {
 function theme_chilo_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
     if ($context->contextlevel == CONTEXT_SYSTEM and $filearea === 'logo') {
         $theme = theme_config::load('chilo');
+        // By default, theme files must be cache-able by both browsers and proxies.
+/*
+        if (!array_key_exists('cacheability', $options)) {
+            $options['cacheability'] = 'public';
+        }
+*/
         return $theme->setting_file_serve('logo', $args, $forcedownload, $options);
     } else {
         send_file_not_found();
@@ -116,6 +122,9 @@ function theme_chilo_set_customcss($css, $customcss) {
 /**
  * Returns an object containing HTML for the areas affected by settings.
  *
+ * Do not add Chilo specific logic in here, child themes should be able to
+ * rely on that function just by declaring settings with similar names.
+ *
  * @param renderer_base $output Pass in $OUTPUT.
  * @param moodle_page $page Pass in $PAGE.
  * @return stdClass An object with the following properties:
@@ -132,15 +141,17 @@ function theme_chilo_get_html_for_settings(renderer_base $output, moodle_page $p
         $return->navbarclass .= ' navbar-inverse';
     }
 
-    if (!empty($page->theme->settings->logo)) {
-        $return->heading = html_writer::link($CFG->wwwroot, '', array('title' => get_string('home'), 'class' => 'logo'));
+    // Only display the logo on the front page and login page, if one is defined.
+    if (!empty($page->theme->settings->logo) &&
+            ($page->pagelayout == 'frontpage' || $page->pagelayout == 'login')) {
+        $return->heading = html_writer::tag('div', '', array('class' => 'logo'));
     } else {
         $return->heading = $output->page_heading();
     }
 
     $return->footnote = '';
     if (!empty($page->theme->settings->footnote)) {
-        $return->footnote = '<div class="footnote text-center">'.$page->theme->settings->footnote.'</div>';
+        $return->footnote = '<div class="footnote text-center">'.format_text($page->theme->settings->footnote).'</div>';
     }
 
     return $return;
@@ -170,11 +181,37 @@ function chilo_set_customcss() {
     throw new coding_exception('Please call theme_'.__FUNCTION__.' instead of '.__FUNCTION__);
 }
 
+
 /**
  * to set redirectedForChilo variable into JavaScript
  * @author tueda
  */
-function setChiloFlagIntoJS() {
-  setChiloFlagIntoSession();
-  echo "<script>var redirectedForChilo = " . $_SESSION['fromChilo'] . ";</script>\n";
+function setChiloFlagIntoJS($page) {
+
+  /**
+   * iBooksは考慮しないことで、weblib.phpの編集を回避
+   * Cloud CHiLO Readerからアクセスした場合は redirectedForChilo=1 にする
+   * @CCC-TIES 2016.04.12
+   */
+  //setChiloFlagIntoSession();
+  session_start();
+  if (!$_SESSION['fromChilo']) {
+    $_SESSION['fromChilo'] = 0;
+  }
+  if ($_REQUEST['chiloflag'] || $_REQUEST['chiloflag'] === '0') {
+    $_SESSION['fromChilo'] = $_REQUEST['chiloflag'];
+    debugging('setChiloFlagIntoSession: fromChilo=' . $_REQUEST['chiloflag'],
+      DEBUG_DEVELOPER);
+  } else {
+    debugging('setChiloFlagIntoSession: isIBooks undefined!!!',
+      DEBUG_DEVELOPER);
+  }
+
+  if (!$_SESSION['fromChilo']) {
+    $_SESSION['fromChilo'] = 0;
+  }
+
+  /*echo "<script>var redirectedForChilo = " . $_SESSION['fromChilo'] . ";</script>\n";*/
+  echo "<script>if(window !== window.top){var redirectedForChilo = 1;}else{var redirectedForChilo = " . $_SESSION['fromChilo'] . ";}</script>\n";
+  /*没 echo "<script>try{if(top.chilobookframe){var redirectedForChilo = 1;}else{var redirectedForChilo = " . $_SESSION['fromChilo'] . ";}}catch(e){alert(33333);}</script>\n";*/
 }
