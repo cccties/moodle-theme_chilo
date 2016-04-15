@@ -186,11 +186,11 @@ function chilo_set_customcss() {
  * to set redirectedForChilo variable into JavaScript
  * @author tueda
  */
-function setChiloFlagIntoJS($page) {
+function setChiloFlagIntoJS() {
 
   /**
-   * iBooks�͍l�����Ȃ����ƂŁAweblib.php�̕ҏW�����
-   * Cloud CHiLO Reader����A�N�Z�X�����ꍇ�� redirectedForChilo=1 �ɂ���
+   * iBooksは考慮しないことで、weblib.phpの編集を回避
+   * Cloud CHiLO Readerからアクセスした場合は redirectedForChilo=1 にする
    * @CCC-TIES 2016.04.12
    */
   //setChiloFlagIntoSession();
@@ -213,5 +213,5 @@ function setChiloFlagIntoJS($page) {
 
   /*echo "<script>var redirectedForChilo = " . $_SESSION['fromChilo'] . ";</script>\n";*/
   echo "<script>if(window !== window.top){var redirectedForChilo = 1;}else{var redirectedForChilo = " . $_SESSION['fromChilo'] . ";}</script>\n";
-  /*�v echo "<script>try{if(top.chilobookframe){var redirectedForChilo = 1;}else{var redirectedForChilo = " . $_SESSION['fromChilo'] . ";}}catch(e){alert(33333);}</script>\n";*/
+  /*没 echo "<script>try{if(top.chilobookframe){var redirectedForChilo = 1;}else{var redirectedForChilo = " . $_SESSION['fromChilo'] . ";}}catch(e){alert(33333);}</script>\n";*/
 }
