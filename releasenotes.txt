@@ -1,33 +1,33 @@
-CHiLO themeはClean theme（version：2015111600）を変更して作成しています。
+CHiLO theme has been modified on the basis of Clean theme（version：2015111600)
 
-（変更内容）
+（Modifications）
 
 1)
-. 引数”chiloflag”に従って適用するレイアウトを変更するスクリプトを追加
+. Added JavaScript file for changing the layout to be adapted according to the argument "chiloflag"
 
-[対象ファイル]
+[target file]
 clean/javascript/styleSwitcher.js
 
 
 
 2)
-・引数”chiloflag”を・setChiloFlagIntoJS()に引き渡す前処理を行う関数を追加
-function setChiloFlagIntoJS($page) {
+・Added function to pretreat before delivering argument "chiloflag" to clean/javascript/styleSwitcher.js(
+function setChiloFlagIntoJS() {
 }
 
-[対象ファイル]
+[target file]
 clean/lib.php
 
 
 
 3)
-・setChiloFlagIntoJS()の呼び出し
+・Added a script to call function "setChiloFlagIntoJS()"
 <?php setChiloFlagIntoJS(); ?>
 
-・styleSwitcher.jsの読み込み
+・Added a script to load "styleSwitcher.js"
 <script src="/theme/chilo/javascript/styleSwitcher.js"></script>
 
-[対象ファイル]
+[target file]
 clean/layout/columns1.php
 clean/layout/columns2.php
 clean/layout/columns3.php
@@ -38,19 +38,19 @@ clean/layout/secure.php
 
 
 4)
-. スタイルシートの追加
+. Added a stylesheet
 
-[対象ファイル]
+[target file]
 clean/style/custom.css
 
 
 
 5).
-・テーマ名の変更
+・Changed [Theme Name]
 clean -> chilo
 Clean -> Chilo
 
-[対象ファイル]
+[target file]
 clean/classes/core_renderer.php
 clean/lang/en/theme_clean.php
 clean/layout/columns1.php
@@ -67,39 +67,39 @@ clean/version.php
 
 
 6).
-ファビコンの変更
+Changed favicon
 
-[対象ファイル]
+[target file]
 clean/pix/favicon.ico
 
 
 
 7)
-・その他
+・Others
 
-(コメントアウト)
+(Comment out)
 $THEME->enable_dock = true;
 
-(追加)
+(Added source code)
 $THEME->plugins_exclude_sheets = array(
     'block' => array(
         'html',
     ),
 );
 
-[対象ファイル]
+[target file]
 clean/config.php
 
 
 
 8)
-・その他
+・Others
 
-(コメントアウト)
+(Comment out)
 if (!array_key_exists('cacheability', $options)) {
     $options['cacheability'] = 'public';
 }
 
 
-[対象ファイル]
+[target file]
 clean/lib.php
