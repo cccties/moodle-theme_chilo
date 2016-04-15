@@ -93,9 +93,9 @@ This software is provided as a part of [_CHiLO_](http://www.cccties.org/activiti
 This theme is created by customizing Moodle3.0 Clean theme.
 
 * [Recommended Environment](#no_1_e)
-* [テーマのインストール](#no_2_e)
-* [テーマのデフォルト設定](#no_3_e)
-* [パラメータと引数](#no_4_e)
+* [Installation of the theme](#no_2_e)
+* [Default setting of the theme](#no_3_e)
+* [Parameter and argument](#no_4_e)
 * [Inquiries](#no_5_e)
 * [Licensing](#no_6_e)
  
@@ -110,23 +110,23 @@ This theme is created by customizing Moodle3.0 Clean theme.
 
 1. Install Moodle.
 2. Download Chilo theme( https://github.com/cccties/moodle-theme_chilo/archive/master.zip )from GitHub then expand.
-3. Move the expanded ディレクトリ名を _chilo_ に変更し _moodle/theme/_ of the sever where Moodle に配置します。
+3. After expanding, change the directory name to _chilo_ and place it to _moodle/theme/_ of the sever where Moodle is installed
 4. Configure the Chilo theme from the Moodle administrator menue "Site > Notice".
 
 [top↑](#top_e)
 
 
-## <a name="no_3_e">テーマのデフォルト設定</a>
+## <a name="no_3_e">Default setting of the theme</a>
 
-_theme/chilo/javascript/styleSwitcher.js_ の _ALLWAYS SIMPLE_ で、テーマのデフォルトレイアウトを定義します。
+Difine the default layout of the theme by setting _ALLWAYS SIMPLE_ of _theme/chilo/javascript/styleSwitcher.js_ 
 
-ALLWAYS_SIMPLE = false,　デフォルトのレイアウトはMoodleの標準レイアウトとする
+ALLWAYS_SIMPLE = false,　the default layout is set as Moodle standard layout
 
-ALLWAYS_SIMPLE = true,　デフォルトのレイアウトはChiloテーマのレイアウトとする
+ALLWAYS_SIMPLE = true,　the default setting is set as Chilo theme layout
 
 ```javascript
 (function( window, document ){
-var /* 初期値はfalseとなっています*/
+var /* the default value is false*/
 ALLWAYS_SIMPLE = false,
 ```
 [top↑](#top_e)
@@ -139,13 +139,13 @@ Fig.1 Chiloflag parameter
 
 |Bit|Contents|
 |---|---|
-|0|ALLWAYS_SIMPLEで設定したディフォルトレイアウトにする|
-|1|CHiLOテーマのレイアウトにする|
-|2|Moodleの標準テーマのレイアウトにする|
+|0|Set to the default layout set in ALLWAYS_SIMPLE|
+|1|Set to the Chilo theme layout|
+|2|Set to the standard theme layout of Moodle|
 
 Following are the specified examples.
 
-* CHiLOテーマのレイアウトにする
+* Set to CHiLO theme layout
 http://example.net/course/view.php?id=2&chiloflag=1
 
 [top↑](#top_e)
@@ -159,4 +159,4 @@ Enter any inquiries, opinions, or requests concernig this software.
 
 ## <a name="no_6_e">Licensing</a>
 
-The CHiLO theme is 'free' software under the terms of the GNU GPLv3 License. (see [LICENSE.txt](LICENSE.txt)) 
+The CHiLO theme is a 'free' software under the terms of the GNU GPLv3 License. (see [LICENSE.txt](LICENSE.txt)) 
