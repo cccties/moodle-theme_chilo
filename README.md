@@ -28,7 +28,7 @@ English version is [HERE](#top_e).
 2. GitHubから Chiloテーマ( https://github.com/cccties/moodle-theme_chilo/archive/master.zip
 )をダウンロードし展開します。
 3. 展開後、ディレクトリ名を _chilo_ に変更し、Moodleをインストールしたサーバーの _moodle/theme/_ に配置します。
-4. Moodleの管理者用メニューの「サイト管理 > 通知」でChiloテーマを設定してください。
+4. インストール後、Chiloテーマを利用したいコースに対して、「アピアランス > テーマを強制する」で、Chiloのテーマを設定します。
 
 [top↑](#top)
 
@@ -106,12 +106,12 @@ This theme is created by customizing Moodle3.0 Clean theme.
 
 [top↑](#top_e)
 
-## <a name="no_2_e">Installation</a>
+## <a name="no_2_e">
+</a>
 
 1. Install Moodle.
 2. Download Chilo theme( https://github.com/cccties/moodle-theme_chilo/archive/master.zip )from GitHub then expand.
 3. After expanding, change the directory name to _chilo_ and place it to _moodle/theme/_ of the sever where Moodle is installed
-4. Configure the Chilo theme from the Moodle administrator menue "Site > Notice".
 
 [top↑](#top_e)
 
